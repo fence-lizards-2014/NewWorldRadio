@@ -1,4 +1,4 @@
 NewWorldRadio
 =============
 
-Listen to music from across the world, in any time period.
+Go back in time and listen to music from across the world.
