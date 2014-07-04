@@ -36,3 +36,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+#Gems for testing
+gem 'jasmine', :group => [:development, :test]
+gem "rspec-rails", :group => [:development, :test]
