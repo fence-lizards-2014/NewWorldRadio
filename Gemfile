@@ -39,3 +39,4 @@ gem 'jquery-rails'
 
 #Gems for testing
 gem 'jasmine', :group => [:development, :test]
+gem "rspec-rails", :group => [:development, :test]
