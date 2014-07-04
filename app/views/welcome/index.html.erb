@@ -1,0 +1,12 @@
+<h1>Welcome</h1>
+
+<%= link_to "Spotify" ,'/auth/spotify' %>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:4EXrQaxrk1eVtnJfkURJ8g" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+
+<% if current_user %>
+  Welcome <%= current_user.name %>!
+  <%= link_to "Sign Out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Spotify", "/auth/spotify" %>
+<% end %>
