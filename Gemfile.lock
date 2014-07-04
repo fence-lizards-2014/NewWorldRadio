@@ -58,6 +58,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.10.1)
+    netrc (0.7.7)
     pg (0.17.1)
     phantomjs (1.9.7.1)
     polyglot (0.3.5)
@@ -86,6 +87,8 @@ GEM
     rake (10.3.2)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest_client (1.7.3)
+      netrc (~> 0.7.7)
     rspec-core (3.0.2)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.2)
@@ -102,6 +105,8 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.2)
+    rspotify (0.7.1)
+      rest_client (~> 1.7)
     sass (3.3.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -132,5 +137,6 @@ DEPENDENCIES
   pg
   rails (= 3.2.18)
   rspec-rails
+  rspotify
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
