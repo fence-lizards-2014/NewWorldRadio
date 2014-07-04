@@ -1,0 +1,217 @@
+Searching 41 files for "configure" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/README.rdoc:
+  122  The console is a Ruby shell, which allows you to interact with your
+  123  application's domain model. Here you'll have all parts of the application
+  124: configured, just like it is when the application is running. You can inspect
+  125  domain models, change values, and save to the database. Starting the script
+  126  without arguments will launch it in the development environment.
+
+/Users/apprentice/NewWorldRadio/config/environments/development.rb:
+    1: NewWorldRadio::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3
+
+/Users/apprentice/NewWorldRadio/config/environments/production.rb:
+    1: NewWorldRadio::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3
+
+/Users/apprentice/NewWorldRadio/config/environments/test.rb:
+    1: NewWorldRadio::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3
+
+4 matches across 4 files
+
+
+Searching 41 files for "configuration" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/config/application.rb:
+   23    class Application < Rails::Application
+   24      # Settings in config/environments/* take precedence over those specified here.
+   25:     # Application configuration should go into files in config/initializers
+   26      # -- all .rb files in that directory are automatically loaded.
+   27
+
+/Users/apprentice/NewWorldRadio/config/database.yml:
+   22
+   23    # Connect on a TCP socket. Omitted by default since the client uses a
+   24:   # domain socket that doesn't need configuration. Windows does not have
+   25    # domain sockets, so uncomment these lines.
+   26    #host: localhost
+
+2 matches across 2 files
+
+
+Searching 41 files for "initializer" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/README.rdoc:
+  169    |-- config
+  170    |   |-- environments
+  171:   |   |-- initializers
+  172    |   `-- locales
+  173    |-- db
+
+/Users/apprentice/NewWorldRadio/config/application.rb:
+   23    class Application < Rails::Application
+   24      # Settings in config/environments/* take precedence over those specified here.
+   25:     # Application configuration should go into files in config/initializers
+   26      # -- all .rb files in that directory are automatically loaded.
+   27
+
+2 matches across 2 files
+
+
+Searching 42 files for "musicbrainz" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/Gemfile:
+   23  gem 'jquery-rails'
+   24
+   25: gem 'musicbrainz', '0.5.2'
+   26
+   27  # To use ActiveModel has_secure_password
+
+/Users/apprentice/NewWorldRadio/Gemfile.lock:
+   53      mini_portile (0.6.0)
+   54      multi_json (1.10.1)
+   55:     musicbrainz (0.5.2)
+   56        nokogiri
+   57      nokogiri (1.6.2.1)
+   ..
+  110    coffee-rails (~> 3.2.1)
+  111    jquery-rails
+  112:   musicbrainz (= 0.5.2)
+  113    pg
+  114    rails (= 3.2.18)
+
+/Users/apprentice/NewWorldRadio/config/application.rb:
+    9
+   10  # MusicBrainz Gem for Music Metadata
+   11: require 'musicbrainz'
+   12
+   13  # require "rails/test_unit/railtie"
+
+/Users/apprentice/NewWorldRadio/config/initializers/musicbrains_config.rb:
+    6
+    7    # Cache config (optional)
+    8:   c.cache_path = "/tmp/musicbrainz-cache"
+    9    c.perform_caching = true
+   10
+
+5 matches across 4 files
+
+
+Searching 42 files for "musicbrainz" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/Gemfile:
+   23  gem 'jquery-rails'
+   24
+   25: gem 'musicbrainz', '0.5.2'
+   26
+   27  # To use ActiveModel has_secure_password
+
+/Users/apprentice/NewWorldRadio/Gemfile.lock:
+   53      mini_portile (0.6.0)
+   54      multi_json (1.10.1)
+   55:     musicbrainz (0.5.2)
+   56        nokogiri
+   57      nokogiri (1.6.2.1)
+   ..
+  110    coffee-rails (~> 3.2.1)
+  111    jquery-rails
+  112:   musicbrainz (= 0.5.2)
+  113    pg
+  114    rails (= 3.2.18)
+
+/Users/apprentice/NewWorldRadio/config/application.rb:
+    9
+   10  # MusicBrainz Gem for Music Metadata
+   11: require 'musicbrainz'
+   12
+   13  # require "rails/test_unit/railtie"
+
+/Users/apprentice/NewWorldRadio/config/initializers/musicbrains_config.rb:
+    8
+    9    # Cache config (optional)
+   10:   c.cache_path = "/tmp/musicbrainz-cache"
+   11    c.perform_caching = true
+   12
+
+5 matches across 4 files
+
+
+Searching 42 files for "configure" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/README.rdoc:
+  122  The console is a Ruby shell, which allows you to interact with your
+  123  application's domain model. Here you'll have all parts of the application
+  124: configured, just like it is when the application is running. You can inspect
+  125  domain models, change values, and save to the database. Starting the script
+  126  without arguments will launch it in the development environment.
+
+/Users/apprentice/NewWorldRadio/config/environments/development.rb:
+    1: NewWorldRadio::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3
+
+/Users/apprentice/NewWorldRadio/config/environments/production.rb:
+    1: NewWorldRadio::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3
+
+/Users/apprentice/NewWorldRadio/config/environments/test.rb:
+    1: NewWorldRadio::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3
+
+/Users/apprentice/NewWorldRadio/config/initializers/musicbrains_config.rb:
+    1  require 'MusicBrainz'
+    2
+    3: MusicBrainz.configure do |c|
+    4    # Application identity (required)
+    5    c.app_name = "My Music App"
+
+5 matches across 5 files
+
+
+Searching 42 files for "require 'musicbrainz'" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/config/application.rb:
+    9
+   10  # MusicBrainz Gem for Music Metadata
+   11: require 'musicbrainz'
+   12
+   13  # require "rails/test_unit/railtie"
+
+/Users/apprentice/NewWorldRadio/config/initializers/musicbrains_config.rb:
+    1: # require 'musicbrainz'
+    2
+    3  # MusicBrainz.configure do |c|
+
+2 matches across 2 files
+
+
+Searching 42 files for "0.5.2" (case sensitive)
+
+/Users/apprentice/NewWorldRadio/Gemfile:
+   23  gem 'jquery-rails'
+   24
+   25: gem 'musicbrainz', '0.7.6'
+   26
+   27  # To use ActiveModel has_secure_password
+
+/Users/apprentice/NewWorldRadio/Gemfile.lock:
+   53      mini_portile (0.6.0)
+   54      multi_json (1.10.1)
+   55:     musicbrainz (0.7.6)
+   56        nokogiri
+   57      nokogiri (1.6.2.1)
+   ..
+  110    coffee-rails (~> 3.2.1)
+  111    jquery-rails
+  112:   musicbrainz (= 0.7.6)
+  113    pg
+  114    rails (= 3.2.18)
+
+3 matches across 2 files
