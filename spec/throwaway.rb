@@ -10,7 +10,7 @@ describe "going to google.com" do
       #execution
       page = Net::HTTP.get(url)
       #expectation
-      expect(page).to have_content('google')
+      expect(page.body).to have_content('google')
     end
   end
 end
