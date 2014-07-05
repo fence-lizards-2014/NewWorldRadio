@@ -5120,3 +5120,80 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-05 12:51:22 -0700
+Connecting to database specified by database.yml
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (3.5ms)
+Warning. Error encountered while saving cache /Users/eoinmcmillan/Desktop/DBC/NewWorldRadio/tmp/cache/sass/9f988402a479c8d0fac1a75e7f4401d046c96f39/jquery.mobile.css.scssc: can't dump anonymous class #<Class:0x007fc659d01390>
+Compiled jquery.mobile.css  (2949ms)  (pid 16876)
+Compiled application.css  (2968ms)  (pid 16876)
+Compiled jquery.mobile.js  (10ms)  (pid 16876)
+Compiled application.js  (103ms)  (pid 16876)
+Completed 200 OK in 3187.8ms (Views: 3187.3ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (31.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (1.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20140704041831)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (13.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "access_token" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140704041831')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTracks (20140705174306)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "tracks" ("id" serial primary key, "title" character varying(255), "artist_id" integer, "album_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140705174306')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAlbums (20140705174322)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "albums" ("id" serial primary key, "title" character varying(255), "year" integer, "artist_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140705174322')
+  [1m[36m (7.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArtists (20140705174331)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "artists" ("id" serial primary key, "name" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140705174331')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLocations (20140705174341)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "locations" ("id" serial primary key, "region" character varying(255), "country" character varying(255), "city" character varying(255), "state" character varying(255) DEFAULT 'none', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140705174341')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-05 12:53:48 -0700
+Connecting to database specified by database.yml
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 152.4ms (Views: 151.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /jquery.mobile.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /jquery.mobile.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2014-07-05 12:53:50 -0700
+Served asset /jquery-mobile/ajax-loader.gif - 200 OK (26ms)

@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery_mobile_rails'
 gem 'rspotify'
 
 # To use ActiveModel has_secure_password
