@@ -6,11 +6,17 @@ gem 'rails', '3.2.18'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+#echowrap gives back the song titles, location and year
 gem 'echowrap'
+
+#api parsing tool
 gem 'httparty'
+
+#Oauth for beats
 gem 'omniauth-beats'
 
+#postgresql
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,7 +32,6 @@ end
 
 gem 'jquery-rails'
 gem 'jquery_mobile_rails'
-gem 'rspotify'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -49,8 +54,5 @@ gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
 gem 'webmock'
 gem 'capybara'
-
-#Gems for heroku
-# gem 'rails_12facZtor', group: :production
 
 ruby '2.0.0'
