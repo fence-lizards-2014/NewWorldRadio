@@ -1,12 +1,1 @@
-
-
-<iframe src="https://embed.spotify.com/?uri=spotify:track:2GrDHQtsSqVAOVrtzD8Ah2" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-
-<%= @track.uri if !@track.nil? %>
-
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:track, "Search for:") %>
-  <%= text_field_tag(:track) %>
-  <%= submit_tag("Search") %>
-<% end %>
-
+Application Index
