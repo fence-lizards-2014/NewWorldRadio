@@ -6,7 +6,6 @@ gem 'rails', '3.2.18'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
 gem 'echowrap'
 
 # Gems used only for assets and not required
@@ -42,3 +41,5 @@ gem 'rspotify'
 #Gems for testing
 gem 'jasmine', :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
+gem 'vcr'
+gem 'webmock'

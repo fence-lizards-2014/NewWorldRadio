@@ -28,6 +28,7 @@ GEM
     activesupport (3.2.18)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    addressable (2.3.6)
     arel (3.0.3)
     builder (3.0.4)
     coffee-rails (3.2.2)
@@ -37,6 +38,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     echowrap (0.1.4)
       faraday (~> 0.9)
@@ -114,6 +117,7 @@ GEM
     rspec-support (3.0.2)
     rspotify (0.7.1)
       rest_client (~> 1.7)
+    safe_yaml (1.0.3)
     sass (3.3.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -134,6 +138,10 @@ GEM
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    vcr (2.9.2)
+    webmock (1.18.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
 
 PLATFORMS
   ruby
@@ -149,3 +157,5 @@ DEPENDENCIES
   rspotify
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
+  vcr
+  webmock
