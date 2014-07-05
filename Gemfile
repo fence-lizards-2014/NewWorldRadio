@@ -22,6 +22,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery_mobile_rails'
 gem 'rspotify'
 
 # To use ActiveModel has_secure_password
@@ -47,6 +48,6 @@ gem 'webmock'
 gem 'capybara'
 
 #Gems for heroku
-gem 'rails_12factor', group: :production
+gem 'rails_12facZtor', group: :production
 
 ruby '2.0.0'
