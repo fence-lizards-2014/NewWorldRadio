@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
@@ -45,3 +46,8 @@ gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
 gem 'webmock'
 gem 'capybara'
+
+#Gems for heroku
+gem 'rails_12facZtor', group: :production
+
+ruby '2.0.0'
