@@ -8,11 +8,17 @@
   Welcome <%= current_user.name %>!
 
 <% else %>
-  <%= link_to "Sign in with Spotify", "/auth/beats" %>
+  <%= link_to "Sign in with ", "/auth/beats" %>
 <% end %>
 
 <%= link_to "Logout", "/signout" %>
-<%= link_to "search", "/search" %>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:track, "Search for:") %>
+  <%= text_field_tag(:track) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
 
 <html>
  <head>

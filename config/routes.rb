@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/auth/beats/callback', to: 'sessions#create'
   resources :users
   get "/signout" => "sessions#destroy", :as => :signout
+  get "/search" => "sessions#search", :as => :search
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
