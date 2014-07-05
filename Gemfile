@@ -42,3 +42,4 @@ gem 'rspotify'
 gem 'jasmine', :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
+gem 'webmock'
