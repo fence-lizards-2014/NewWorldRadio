@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessible :access_token, :email, :name, :password
+  attr_accessible :provider, :uid, :name
+
 end
