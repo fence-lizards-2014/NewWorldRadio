@@ -1,3 +1,25 @@
-Hello JQuery Mobile
 
-<script src="http://bam.cdn.beatsmusic.com/bam-1.0.2.min.js"></script>
+<div data-role="page" id="main">
+  <div data-role="header"> <h1>New World Radio</h1>
+  </div>
+  <div data-role="content">
+
+      <!-- search -->
+      <div data-role="fieldcontainer">
+        <label for="qty">Select a Year:</label>
+        <input type="range" id="qty" name="qty" min="1942" max="2014" value="1986" data-theme="e" data-track-theme="b">
+      </div>
+
+      <!-- slider -->
+      <label for="updated">Receive updates</label>
+      <select id="updated" name="updated" data-role="slider"> <option value="no">Location</option>
+        <option value="yes">Date</option>
+      </select>
+
+      <!-- menu selector different interface-->
+      <label for="training">Select a Location</label> <select id="training" name="training"> <option value="1">USA</option>
+      <option value="2">India</option> <option value="3">Australia</option>
+      <option value="4">United Kingdom</option> <option value="5">Iran</option> <option value="6">Hong Kong</option> </select>
+
+    </div>
+  </div>
