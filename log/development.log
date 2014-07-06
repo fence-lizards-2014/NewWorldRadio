@@ -5307,3 +5307,45 @@ Served asset /beats.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2014-07-05 16:34:25 -0700
 Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20140704041831)
+Migrating to CreateTracks (20140705174306)
+Migrating to CreateAlbums (20140705174322)
+Migrating to CreateArtists (20140705174331)
+Migrating to CreateLocations (20140705174341)
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (340.1ms)[0m  DROP DATABASE IF EXISTS "NewWorldRadio_test"
+  [1m[36m (886.5ms)[0m  [1mCREATE DATABASE "NewWorldRadio_test" ENCODING = 'unicode'[0m
+  [1m[35m (7.0ms)[0m  CREATE TABLE "albums" ("id" serial primary key, "title" character varying(255), "year" integer, "artist_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "artists" ("id" serial primary key, "name" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (5.4ms)[0m  CREATE TABLE "locations" ("id" serial primary key, "region" character varying(255), "country" character varying(255), "city" character varying(255), "state" character varying(255) DEFAULT 'none', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "tracks" ("id" serial primary key, "title" character varying(255), "artist_id" integer, "album_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "access_token" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140705174341')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140704041831')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140705174306')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140705174322')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140705174331')
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (123.0ms)[0m  DROP DATABASE IF EXISTS "NewWorldRadio_test"
+  [1m[36m (634.5ms)[0m  [1mCREATE DATABASE "NewWorldRadio_test" ENCODING = 'unicode'[0m
+  [1m[35m (8.3ms)[0m  CREATE TABLE "albums" ("id" serial primary key, "title" character varying(255), "year" integer, "artist_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "artists" ("id" serial primary key, "name" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (5.4ms)[0m  CREATE TABLE "locations" ("id" serial primary key, "region" character varying(255), "country" character varying(255), "city" character varying(255), "state" character varying(255) DEFAULT 'none', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "tracks" ("id" serial primary key, "title" character varying(255), "artist_id" integer, "album_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (4.3ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "access_token" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140705174341')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140704041831')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140705174306')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140705174322')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140705174331')
