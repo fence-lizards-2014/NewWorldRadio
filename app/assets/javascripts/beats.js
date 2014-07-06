@@ -12,6 +12,9 @@ bam.on("ready",handleReady);
 
 var eq = new GraphicEqualizer(600, 400);
 
+    $('#play').click(function(e){
+    });
+
 });
 function handleReady(success) {
 
@@ -32,7 +35,7 @@ function handleReady(success) {
         user_id:198651804664201728
     };
 
-    bam.identifier = 'tr87892651';//initial track setting
+    bam.identifier = 'tr61035611';//initial track setting
     // trackId.value = bam.identifier;
     // debugger;
     // eq.init(bam);

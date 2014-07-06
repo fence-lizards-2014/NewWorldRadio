@@ -27,12 +27,12 @@
 
 <%= link_to "Sign in with ", "/auth/beats" %>
 <%= link_to "Logout", "/signout" %>
-<%= form_tag("/search", method: "get") do %>
+<%= form_tag("/search", method: "get", :remote => true) do %>
   <%= label_tag(:location, "Location:") %>
   <%= text_field_tag(:location) %>
   <%= label_tag(:time, "Time:") %>
   <%= text_field_tag(:time) %>
-  <%= submit_tag("Play!") %>
+  <div id="play"><%= submit_tag("Play!") %></div>
 <%end %>
 
 </div>
