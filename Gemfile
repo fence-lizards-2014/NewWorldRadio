@@ -8,6 +8,9 @@ gem 'rails', '3.2.18'
 
 gem 'pg'
 gem 'echowrap'
+gem 'httparty'
+gem 'omniauth-beats'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -44,10 +47,10 @@ gem 'rspotify'
 gem 'jasmine', :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
-gem 'webmock'
+# gem 'webmock'
 gem 'capybara'
 
 #Gems for heroku
-gem 'rails_12facZtor', group: :production
+# gem 'rails_12facZtor', group: :production
 
 ruby '2.0.0'
