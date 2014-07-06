@@ -83,7 +83,6 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-    netrc (0.7.7)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     oauth2 (0.9.4)
@@ -130,8 +129,6 @@ GEM
     rake (10.3.2)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest_client (1.7.3)
-      netrc (~> 0.7.7)
     rspec-core (3.0.2)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.2)
@@ -148,8 +145,6 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.2)
-    rspotify (0.7.1)
-      rest_client (~> 1.7)
     safe_yaml (1.0.3)
     sass (3.3.9)
     sass-rails (3.2.6)
@@ -193,7 +188,6 @@ DEPENDENCIES
   pg
   rails (= 3.2.18)
   rspec-rails
-  rspotify
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   vcr
