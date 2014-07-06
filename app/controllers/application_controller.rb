@@ -5,17 +5,14 @@ class ApplicationController < ActionController::Base
     # RSpotify::Track.search('Lotta that').first
   end
 
-  def search
-    # @track = RSpotify::Track.search(params[:track]).first
-    # p @track.album.popularity
- @test = Echowrap.artist_search(:artist_location => "New York")
+  private
 
-
-
-    # @test = Echowrap.artist_search(:name => "lil wayne")
-    p @test.first.songs
-    @bio = Echowrap.artist_biographies(:id => @test.first.id)
-    @test.first.location
-    render :index
+def current_user
+  puts current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
-end
+
+
+ end
+
+

@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+<script src="http://bam.cdn.beatsmusic.com/bam-1.0.2.min.js"></script>
+
+<%= link_to "Sign in with ", "/auth/beats" %>
+<%= link_to "Logout", "/signout" %>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:location, "Location:") %>
+  <%= text_field_tag(:location) %>
+  <%= label_tag(:time, "Time:") %>
+  <%= text_field_tag(:time) %>
+  <%= submit_tag("Play!") %>
+<%end %>
+
+

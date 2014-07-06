@@ -3,7 +3,7 @@ $(document).ready(function(){
 
  bam = new BeatsAudioManager();
 
-console.log(bam)
+console.log(bam);
 	
 // sign up for things important to our example
 bam.on("ready",handleReady);
@@ -14,6 +14,7 @@ var eq = new GraphicEqualizer(600, 400);
 
 });
 function handleReady(success) {
+
 	console.log("DSDSD")
 	console.log(success)
     if (!success) {
@@ -31,7 +32,7 @@ function handleReady(success) {
         user_id:198651804664201728
     };
             
-    bam.identifier = 'tr51010677';//initial track setting
+    bam.identifier = 'tr66775563';//initial track setting
     // trackId.value = bam.identifier;
     // debugger;
     // eq.init(bam);
