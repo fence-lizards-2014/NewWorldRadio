@@ -11,7 +11,7 @@ gem 'pry'
 gem 'echowrap'
 gem 'httparty'
 gem 'omniauth-beats'
-
+gem "youtube_it"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -48,7 +48,7 @@ gem 'rspotify'
 gem 'jasmine', :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
-gem 'webmock'
+# gem 'webmock'
 gem 'capybara'
 
 #Gems for heroku
