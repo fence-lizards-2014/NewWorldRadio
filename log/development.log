@@ -8338,3 +8338,30 @@ Served asset /beats.js - 200 OK (3ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-05 18:49:09 -0700
 Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-05 18:52:32 -0700
+Connecting to database specified by database.yml
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52.6ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-05 18:52:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-05 18:52:33 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-05 18:52:33 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-05 18:52:33 -0700
+Served asset /beats.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-05 18:52:33 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
