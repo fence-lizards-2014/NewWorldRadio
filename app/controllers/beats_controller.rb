@@ -1,7 +1,7 @@
 class BeatsController < ApplicationController
 
 	def index
-		
+
 	end
 
 	def search
@@ -17,6 +17,7 @@ class BeatsController < ApplicationController
 		@title = @title.split(" ").join("+")
 		p @title
 		response = HTTParty.get("https://partner.api.beatsmusic.com/v1/api/search?type=track&q=#{@title}&client_id=yupuktqwpjsbdka36drye9fv")
+
 		data = JSON.parse(response.body)
 		@song_id = data["data"].first["id"]
 		puts @song_id
@@ -25,26 +26,3 @@ class BeatsController < ApplicationController
 
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

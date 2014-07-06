@@ -7,6 +7,7 @@ gem 'rails', '3.2.18'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'pry'
 gem 'echowrap'
 gem 'httparty'
 gem 'omniauth-beats'
@@ -47,7 +48,7 @@ gem 'rspotify'
 gem 'jasmine', :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
-# gem 'webmock'
+gem 'webmock'
 gem 'capybara'
 
 #Gems for heroku
