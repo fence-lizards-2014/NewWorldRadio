@@ -4,7 +4,7 @@ $(document).ready(function(){
  bam = new BeatsAudioManager();
 
 console.log(bam);
-	
+
 // sign up for things important to our example
 bam.on("ready",handleReady);
 // bam.on("timeupdate", handleTimeUpdate);
@@ -25,14 +25,14 @@ function handleReady(success) {
     // shows console
     //bam_engine.style.width = "500px";
     //bam_engine.style.height = "200px";
-   
+
     bam.clientId = 'yupuktqwpjsbdka36drye9fv';
     bam.authentication = {
-        access_token:'xx6784be8gd6bmrcb896pyku', 
+        access_token:'xx6784be8gd6bmrcb896pyku',
         user_id:198651804664201728
     };
-            
-    bam.identifier = 'tr66775563';//initial track setting
+
+    bam.identifier = 'tr87892651';//initial track setting
     // trackId.value = bam.identifier;
     // debugger;
     // eq.init(bam);
