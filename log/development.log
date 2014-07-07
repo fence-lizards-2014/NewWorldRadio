@@ -12465,3 +12465,501 @@ Started GET "/search?utf8=%E2%9C%93&location=New+York&time=2009&commit=Play!" fo
 Processing by BeatsController#search as JS
   Parameters: {"utf8"=>"✓", "location"=>"New York", "time"=>"2009", "commit"=>"Play!"}
 Completed 200 OK in 1559.3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:58:00 -0700
+Connecting to database specified by database.yml
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (2.4ms)
+Compiled jquery.js  (37ms)  (pid 1904)
+Compiled jquery_ujs.js  (0ms)  (pid 1904)
+Compiled jquery.mobile.js  (6ms)  (pid 1904)
+Compiled application.js  (82ms)  (pid 1904)
+Completed 200 OK in 103.8ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:00 -0700
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:00 -0700
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:01 -0700
+Served asset /jquery.mobile.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:01 -0700
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:01 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:58:08 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 1760.3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:58:53 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 1421.4ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:58:56 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.5ms)
+Compiled beats.js  (0ms)  (pid 1904)
+Compiled application.js  (4ms)  (pid 1904)
+Completed 200 OK in 97.1ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0700
+Served asset /beats.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:01 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 869.6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:14 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 1305.2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:17 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 947.6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:22 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 813.6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:24 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 928.0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:59:32 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.5ms)
+Compiled beats.js  (0ms)  (pid 1904)
+Compiled application.js  (5ms)  (pid 1904)
+Completed 200 OK in 62.9ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:32 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:32 -0700
+Served asset /beats.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:32 -0700
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=New+York&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:37 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"New York", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 943.5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=New+York&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 10:59:57 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"New York", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 1538.6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:00:30 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.8ms)
+Compiled beats.js  (0ms)  (pid 1904)
+Compiled application.js  (3ms)  (pid 1904)
+Completed 200 OK in 65.9ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:00:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:00:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:00:30 -0700
+Served asset /beats.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:00:30 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:00:30 -0700
+Served asset /application.js - 304 Not Modified (60ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=New+York&time=London&commit=Play!" for 127.0.0.1 at 2014-07-07 11:00:38 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"New York", "time"=>"London", "commit"=>"Play!"}
+Completed 500 Internal Server Error in 272.4ms
+
+Echowrap::Error::BadRequest (artist_start_year_after - Invalid parameter: "London" is not a valid year.):
+  app/controllers/beats_controller.rb:14:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20" for 127.0.0.1 at 2014-07-07 11:01:06 -0700
+
+ActionController::RoutingError (No route matches [GET] "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=New+York&time=1990&commit=Play!" for 127.0.0.1 at 2014-07-07 11:01:09 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"New York", "time"=>"1990", "commit"=>"Play!"}
+Completed 200 OK in 1664.1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:06:46 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2.4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/jquery.knob.js" for 127.0.0.1 at 2014-07-07 11:06:46 -0700
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.knob.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:09:57 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2.0ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/jquery.knob.js" for 127.0.0.1 at 2014-07-07 11:09:57 -0700
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.knob.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:17:30 -0700
+Connecting to database specified by database.yml
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13.7ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:17:31 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/jquery.knob.js" for 127.0.0.1 at 2014-07-07 11:17:31 -0700
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.knob.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:19:24 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2.5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/jquery.knob.js" for 127.0.0.1 at 2014-07-07 11:19:24 -0700
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.knob.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:21:39 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2.2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/javascripts/jquery.knob.js" for 127.0.0.1 at 2014-07-07 11:21:39 -0700
+Served asset /javascripts/jquery.knob.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascripts/jquery.knob.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:21:55 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2.2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/javascripts/jquery.knob.js" for 127.0.0.1 at 2014-07-07 11:21:55 -0700
+Served asset /javascripts/jquery.knob.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascripts/jquery.knob.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.0ms)
+Compiled jquery.knob.js  (0ms)  (pid 2417)
+Compiled application.js  (8ms)  (pid 2417)
+Completed 200 OK in 102.6ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:22:21 -0700
+Served asset /jquery.knob.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4.8ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:24:09 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&time=1960&commit=Play!" for 127.0.0.1 at 2014-07-07 11:24:21 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1960", "commit"=>"Play!"}
+Completed 200 OK in 1457.4ms (Views: 0.1ms | ActiveRecord: 0.0ms)
