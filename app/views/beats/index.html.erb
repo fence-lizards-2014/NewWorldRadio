@@ -9,8 +9,8 @@
 <p>&#215; Date Dial</p>
         <div class="demo" style="height:440px;width:300px">
             <div style="float:left;">
-                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#87CEEA">1998</div>
-                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+                <div class="ival" id="time" style="width:80px;text-align:center;font-size:50px;color:#87CEEA">1998</div>
+                <div class="idir" id="time" style="width:80px;text-align:center;font-size:50px;"></div>
             </div>
 
 
@@ -18,7 +18,7 @@
                 <pre>
 
                 </pre>
-                <input class="infinite" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
+                <input class="infinite" id="time" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
 
             </div>
  </div>
@@ -26,7 +26,7 @@
 <div id="play">
     <%= form_tag("/search", method: "get") do %>
       <%= label_tag(:location, "Location:") %>
-      <%= text_field_tag(:location, "London") %>
+      <%= text_field_tag(:location) %>
 
      <!--  -->
       <%= submit_tag("Play!") %>
@@ -37,11 +37,11 @@
 <!-- ########################################## -->
 <!-- Country Dial -->
 <!-- ########################################## -->
-<p>&#215; Country Dial</p>
+<!-- <p>&#215; Country Dial</p>
         <div class="demo" style="height:440px;width:300px">
             <div style="float:left;">
-                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:red">Australia</div>
-                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+                <div class="ival" id="location" style="width:80px;text-align:center;font-size:50px;color:red"></div>
+                <div class="idir" id="location" style="width:80px;text-align:center;font-size:50px;"></div>
             </div>
 
 
@@ -49,11 +49,11 @@
                 <pre>
 
                 </pre>
-                <input class="infinite" value="1998" data-width="150" data-thickness=".35" data-fgColor="blue" data-bgColor="pink" data-displayInput="false" data-cursor=true>
+                <input class="infinite" id="location" value="1998" data-width="150" data-thickness=".35" data-fgColor="blue" data-bgColor="pink" data-displayInput="false" data-cursor=true>
 
             </div>
  </div>
-
+ -->
 
 
 

@@ -7,7 +7,7 @@ $(document).ready(function(){
     $.ajax({
       type: "GET",
       url: "/search",
-      data: {location: "New York", time: $('.ival').html()} ,
+      data: {location: $("#location").val(), time: $('.ival').html()} ,
       dataType: 'json'
     }).done(function(data){
       console.log("done")
