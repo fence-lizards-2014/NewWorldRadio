@@ -1,0 +1,63 @@
+<!DOCTYPE html> <html>
+<head>
+<meta charset="utf-8" />
+
+<!-- make apple top section black -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>Your Title</title> <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" /> <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> <script type="text/javascript"
+src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script> <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> <body>
+
+
+
+
+<div data-role="page" id="main">
+<div data-role="header"> <h1>Interactive</h1>
+</div>
+<div data-role="content"> <ul data-role="listview">
+<li><a href="#page2">Internal Page link</a>
+<li><a href="other.html">External Page link</a>
+<li><a href="http://www.mobilexweb.com">Absolute external link</a>
+<li><a href="tel:+13051010200">Call to a phone number using a link</a>
+<li><a href="javascript:alert('Hi!')">JavaScript link</a></ul>
+<ul data-role="listview" data-filter="true" data-filter-placeholder= "Search contacts...">
+<!-- list rows --> </ul>
+
+<!-- search -->
+<div data-role="fieldcontainer">
+<label for="qty">Quantity:</label>
+<input type="range" id="qty" name="qty" min="1" max="100" value="5" data-theme="e" data-track-theme="b">
+</div>
+
+<!-- slider -->
+<label for="updated">Receive updates</label>
+<select id="updated" name="updated" data-role="slider"> <option value="no">No</option>
+<option value="yes">Yes</option>
+</select>
+
+<!-- menu selector different interface-->
+<label for="training">Training</label> <select id="training" name="training"> <option value="1">HTML5</option>
+<option value="2">jQuery Mobile</option> <option value="3">iOS</option>
+<option value="4">Android</option> <option value="5">BlackBerry</option> <option value="6">Qt for Meego</option> </select>
+
+
+
+<!-- menu selector  // different interface-->
+<label for="lang">Languages you like</label> <select id="lang" name="lang" multiple> <option value="1">C/C++</option>
+<option value="2">Objective-C</option>
+<option value="3">Java</option>
+<option value="4">C#</option>
+<option value="5">Visual Basic</option> <option value="6">ActionScript</option> <option value="7">Delphi</option> <option value="8">Phyton</option> <option value="9">JavaScript</option> <option value="10">Ruby</option> <option value="11">PHP</option> </select>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

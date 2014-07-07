@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New World Radio</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+        <script src="js/jquery.knob.js"></script>
+        <script>
+            $(function($) {
+
+                $(".knob").knob({
+                    change : function (value) {
+                        //console.log("change : " + value);
+                    },
+                    release : function (value) {
+                        //console.log(this.$.attr('value'));
+                        console.log("release : " + value);
+                    },
+                    cancel : function () {
+                        console.log("cancel : ", this);
+                    },
+                    /*format : function (value) {
+                        return value + '%';
+                    },*/
+                    draw : function () {
+
+                        // "tron" case
+                        if(this.$.data('skin') == 'tron') {
+
+                            this.cursorExt = 0.3;
+
+                            var a = this.arc(this.cv)  // Arc
+                                , pa                   // Previous arc
+                                , r = 1;
+
+                            this.g.lineWidth = this.lineWidth;
+
+                            if (this.o.displayPrevious) {
+                                pa = this.arc(this.v);
+                                this.g.beginPath();
+                                this.g.strokeStyle = this.pColor;
+                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                                this.g.stroke();
+                            }
+
+                            this.g.beginPath();
+                            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                            this.g.stroke();
+
+                            this.g.lineWidth = 2;
+                            this.g.beginPath();
+                            this.g.strokeStyle = this.o.fgColor;
+                            this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                            this.g.stroke();
+
+                            return false;
+                        }
+                    }
+                });
+
+                // Example of infinite knob, iPod click wheel
+                var v, up=0,down=0,i=1998
+                    ,$idir = $("div.idir")
+                    ,$ival = $("div.ival")
+                    // plus and minus removed from strings below
+                    ,incr = function() { i++; $idir.show().html("").fadeOut(); $ival.html(i); }
+                    ,decr = function() { i--; $idir.show().html("").fadeOut(); $ival.html(i); };
+                $("input.infinite").knob(
+                                    {
+                                    min : 0
+                                    , max : 20
+                                    , stopper : false
+                                    , change : function () {
+                                                    if(v > this.cv){
+                                                        if(up){
+                                                            decr();
+                                                            up=0;
+                                                        }else{up=1;down=0;}
+                                                    } else {
+                                                        if(v < this.cv){
+                                                            if(down){
+                                                                incr();
+                                                                down=0;
+                                                            }else{down=1;up=0;}
+                                                        }
+                                                    }
+                                                    v = this.cv;
+                                                }
+                                    });
+            });
+        </script>
+        <style>
+            body{
+              padding: 0;
+              margin: 0px 50px;
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              text-rendering: optimizelegibility;
+            }
+            p{font-size: 30px; line-height: 30px}
+            div.demo{text-align: center; width: 280px; float: left}
+            div.demo > p{font-size: 20px}
+        </style>
+    </head>
+    <body style="background-color:#222;">
+        <div style="width:80%;font-size:40px;letter-spacing:-8px;line-height:40px;color:#66EE66;">
+            <h1>New World Radio</h1>
+        </div>
+
+<!-- ########################################## -->
+<!-- dial -->
+<!-- ########################################## -->
+<!-- <p>&#215; Infinite || iPod click wheel</p> -->
+        <div class="demo" style="height:440px;width:300px">
+            <div style="float:left;">
+                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#87CEEA">1998</div>
+                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+            </div>
+
+
+            <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
+                <pre>
+
+                </pre>
+                <input class="infinite" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
+
+            </div>
+ </div>
+<!-- Number -->
+
+
+
+<!-- ########################################## -->
+<!-- ########################################## -->
+
+    <!--     <div style="clear:both"></div>
+        <div class="demo" style="width:100%" >
+
+            <pre>            </pre>
+            <div style="width: 80%; margin-bottom: 20px; background-color:#222"> -->
+
+<!-- <input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25" data-skin="tron"> -->
+
+<!--
+<input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25"> -->
+<!-- REMOVED BUT NICE:  data-displayPrevious=true -->
+<!-- THIN BORDER INSTEAD OF BACKGROUND: data-skin="tron" -->
+
+          <!--   </div>
+        </div> -->
+
+        <!-- <div style="clear:both"></div>
+        <script>
+        function clock() {
+            var $s = $(".second"),
+                $m = $(".minute"),
+                $h = $(".hour");
+                d = new Date(),
+                s = d.getSeconds(),
+                m = d.getMinutes(),
+                h = d.getHours();
+            $s.val(s).trigger("change");
+            $m.val(m).trigger("change");
+            $h.val(h).trigger("change");
+            setTimeout("clock()", 1000);
+        }
+        clock();
+        </script>
+        <div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
+            <p>&#215; Superpose (clock)</p>
+            <div style="position:relative;width:350px;margin:auto">
+                <div style="position:absolute;left:10px;top:10px">
+                    <input class="knob hour" data-min="0" data-max="24" data-bgColor="#333" data-fgColor="#ffec03" data-displayInput=false data-width="300" data-height="300" data-thickness=".3">
+                </div>
+                <div style="position:absolute;left:60px;top:60px">
+                    <input class="knob minute" data-min="0" data-max="60" data-bgColor="#333" data-displayInput=false data-width="200" data-height="200" data-thickness=".45">
+                </div>
+                <div style="position:absolute;left:110px;top:110px">
+                    <input class="knob second" data-min="0" data-max="60" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="100" data-height="100" data-thickness=".3">
+                </div>
+            </div>
+        </div>
+ -->
+
+
+
+
+
+
+
+    </body>
+</html>
