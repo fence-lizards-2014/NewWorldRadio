@@ -47,8 +47,8 @@ gem 'rspotify'
 #Gems for testing
 gem 'jasmine', :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
-gem 'vcr'
-gem 'webmock'
+# gem 'vcr'
+# gem 'webmock'
 gem 'capybara'
 
 #Gems for heroku
