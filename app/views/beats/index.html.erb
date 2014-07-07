@@ -1,61 +1,33 @@
+<div id="top" style="font-size:1.5em;line-height:1.75em;color:#66EE66; text-align:center">
+  <h1>New World Radio</h1>
+</div>
 
-        <div id="top" style="font-size:1.5em;line-height:1.75em;color:#66EE66; text-align:center">
-            <h1>New World Radio</h1>
-        </div>
+<div class="ival" id="time" style="text-align:center;font-size:3.125em;color:#87CEEA">1998</div>
 
-<!-- ########################################## -->
-<!-- Date Dial -->
-<!-- ########################################## -->
-        <div class="ival" id="time" style="text-align:center;font-size:3.125em;color:#87CEEA">1998</div>
-        <div class="demo" style="height:27.5em;text-align:center;">
-            <div style="float:left;">
-                <div class="idir" id="time" style="width:80px;text-align:center;font-size:50px;"></div>
-            </div>
+<div class="demo" style="height:27.5em;text-align:center;">
+  <div style="float:left;">
+    <div class="idir" id="time" style="width:80px;text-align:center;font-size:50px;"></div>
+  </div>
 
+  <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
+    <pre>
 
-            <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
-                <pre>
+    </pre>
 
-                </pre>
-                <input class="infinite" id="time" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
+    <input class="infinite" id="time" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
 
-            </div>
- </div>
+  </div>
+</div>
 
 <div id="play">
     <%= form_tag("/search", method: "get") do %>
       <%= label_tag(:location, "Location:") %>
       <%= text_field_tag(:location) %>
 
-     <!--  -->
       <%= submit_tag("Play!") %>
 
     <%end %>
 </div>
-
-<!-- ########################################## -->
-<!-- Country Dial -->
-<!-- ########################################## -->
-<!-- <p>&#215; Country Dial</p>
-        <div class="demo" style="height:440px;width:300px">
-            <div style="float:left;">
-                <div class="ival" id="location" style="width:80px;text-align:center;font-size:50px;color:red"></div>
-                <div class="idir" id="location" style="width:80px;text-align:center;font-size:50px;"></div>
-            </div>
-
-
-            <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
-                <pre>
-
-                </pre>
-                <input class="infinite" id="location" value="1998" data-width="150" data-thickness=".35" data-fgColor="blue" data-bgColor="pink" data-displayInput="false" data-cursor=true>
-
-            </div>
- </div>
- -->
-
-
-
 
 
 <iframe id="ytplayer" type="text/html" width="0" height="0"
