@@ -1,10 +1,10 @@
-class User < ActiveRecord::Base
+class User
   attr_accessible :access_token, :email, :name, :password
 
 
   def self.from_omniauth(auth_hash)
 	puts "USERRRRR"
-     create! do |user|  
+     create! do |user|
       user.provider = auth_hash.provider
       user.uid = auth_hash.uid
       user.name = auth_hash.info.name
