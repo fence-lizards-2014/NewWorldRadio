@@ -2,13 +2,24 @@
 $(document).ready(function(){
 
     $('#play').on("click", function(e){
+      // debugger
     e.preventDefault();
     $.ajax({
       type: "GET",
       url: "/search",
-      data: {location: "New York", time: $('.ival').html() }
-    }).fail(function(data){
-      $('iframe').attr("src", data.responseText)
+      data: {location: "New York", time: $('.ival').html()} ,
+      dataType: 'json'
+    }).done(function(data){
+      console.log("done")
+      console.log(data.video_url)
+      $('iframe').attr("src", data.video_url)
+
+    })
+    .fail(function(data){
+
+      console.log(data)
+      console.log("fail")
+      console.log(data.responseText)
     })
   })
 })
@@ -19,9 +30,6 @@ $(document).ready(function(){
 
 
   // $('#play').bind('ajax:success',playmusic)
-
-
-
 
 function playmusic(e, data, status, xhr){
 

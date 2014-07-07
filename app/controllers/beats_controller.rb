@@ -18,11 +18,14 @@ class BeatsController < ApplicationController
 
 		response = HTTParty.get("http://gdata.youtube.com/feeds/api/videos?alt=json&fields=entry&max-results=2&v=2&q=#{@title}&safeSearch=none&time=all_time&uploader=partner")
 	 	@video_id = response.parsed_response["feed"]["entry"].first["id"]['$t'].split(":").last
-	 	@video_url = "https://www.youtube.com/embed/" + @video_id
-	 	p @video_url
-		respond_to do |format|
-         format.json {render json: @video_url}
-     	end
+	 	@video_url = "https://www.youtube.com/embed/" + @video_id+"?autoplay=1"
+	 # 	p @video_url
+
+		# respond_to do |format|
+  #        format.json {render json: @video_url}
+  #   end
+ render json: {video_url: @video_url}
+# render json: {hi: 'stuff'}.to_json
 	end
 
 
