@@ -10,7 +10,6 @@ gem 'pg'
 gem 'pry'
 gem 'echowrap'
 gem 'httparty'
-gem 'omniauth-beats'
 gem "youtube_it"
 
 # Gems used only for assets and not required

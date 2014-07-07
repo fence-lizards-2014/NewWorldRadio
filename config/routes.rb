@@ -1,5 +1,4 @@
 NewWorldRadio::Application.routes.draw do
-  root :to => "beats#index"
-  get '/auth/beats/callback', to: 'sessions#create'
-  get "/search" => "beats#search"
+  root :to => "songs#index"
+  get "/search" => "songs#search"
 end

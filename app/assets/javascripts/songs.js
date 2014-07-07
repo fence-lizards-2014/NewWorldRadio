@@ -2,7 +2,6 @@
 $(document).ready(function(){
 
     $('#play').on("click", function(e){
-      // debugger
     e.preventDefault();
     $.ajax({
       type: "GET",

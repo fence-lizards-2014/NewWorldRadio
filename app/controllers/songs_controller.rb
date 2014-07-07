@@ -1,6 +1,6 @@
 require 'youtube_it'
 
-class BeatsController < ApplicationController
+class SongsController < ApplicationController
 
 	def index
 
