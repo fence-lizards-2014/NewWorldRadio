@@ -12432,3 +12432,36 @@ Started GET "/search?utf8=%E2%9C%93&location=London&time=1990&commit=Play!" for 
 Processing by BeatsController#search as JS
   Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1990", "commit"=>"Play!"}
 Completed 200 OK in 1253.6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-06 20:24:14 -0700
+Connecting to database specified by database.yml
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 65.0ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-06 20:24:15 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-06 20:24:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-06 20:24:15 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-06 20:24:15 -0700
+Served asset /beats.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-06 20:24:15 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=New+York&time=2009&commit=Play!" for 127.0.0.1 at 2014-07-06 20:24:36 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"New York", "time"=>"2009", "commit"=>"Play!"}
+Completed 200 OK in 1559.3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
