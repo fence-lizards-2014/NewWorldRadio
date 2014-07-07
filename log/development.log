@@ -12963,3 +12963,1930 @@ Started GET "/search?utf8=%E2%9C%93&location=London&time=1960&commit=Play!" for 
 Processing by BeatsController#search as JS
   Parameters: {"utf8"=>"✓", "location"=>"London", "time"=>"1960", "commit"=>"Play!"}
 Completed 200 OK in 1457.4ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:26:38 -0700
+Connecting to database specified by database.yml
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 49.9ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:39 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:39 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:39 -0700
+Served asset /beats.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:39 -0700
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:39 -0700
+Served asset /jquery.knob.js - 304 Not Modified (2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=&time=&commit=Play!" for 127.0.0.1 at 2014-07-07 11:26:42 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"", "time"=>"", "commit"=>"Play!"}
+Completed 500 Internal Server Error in 299.8ms
+
+Echowrap::Error::BadRequest (artist_start_year_after - Invalid parameter: "" is not a valid year.):
+  app/controllers/beats_controller.rb:14:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20" for 127.0.0.1 at 2014-07-07 11:26:45 -0700
+
+ActionController::RoutingError (No route matches [GET] "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6.6ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:27:35 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5.2ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:36 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:36 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:36 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:36 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:35:02 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4.5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:35:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:35:02 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:35:02 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:35:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:35:02 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:35:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&commit=Play!" for 127.0.0.1 at 2014-07-07 11:35:14 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "commit"=>"Play!"}
+Completed 500 Internal Server Error in 291.1ms
+
+Echowrap::Error::BadRequest (artist_start_year_after - Invalid parameter: "" is not a valid year.):
+  app/controllers/beats_controller.rb:14:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20" for 127.0.0.1 at 2014-07-07 11:37:23 -0700
+
+ActionController::RoutingError (No route matches [GET] "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:37:24 -0700
+Processing by BeatsController#index as HTML
+ERROR: compiling _app_views_beats_index_html_erb__1509981339532780548_70193845730200 RAISED /Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...eld_tag(:time, javascript_tag "alert('All is good')") );@out...
+...                               ^
+/Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+...t_tag "alert('All is good')") );@output_buffer.safe_concat('
+...                               ^
+Function body:           def _app_views_beats_index_html_erb__1509981339532780548_70193845730200(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "beats/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+        <div style="width:80%;font-size:40px;letter-spacing:-8px;line-height:40px;color:#66EE66;">
+            <h1>New World Radio</h1>
+        </div>
+
+<!-- ########################################## -->
+<!-- dial -->
+<!-- ########################################## -->
+<!-- <p>&#215; Infinite || iPod click wheel</p> -->
+        <div class="demo" style="height:440px;width:300px">
+            <div style="float:left;">
+                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#87CEEA">1998</div>
+                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+            </div>
+
+
+            <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
+                <pre>
+
+                </pre>
+                <input class="infinite" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
+
+            </div>
+ </div>
+
+<div id="play">
+    ');@output_buffer.append=  form_tag("/search", method: "get", :remote => true) do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( label_tag(:location, "Location:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( text_field_tag(:location, "London") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+      ');@output_buffer.append= ( label_tag(:time, "Time:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( text_field_tag(:time, javascript_tag "alert('All is good')") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( submit_tag("Play!") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');    end 
+@output_buffer.safe_concat('</div>
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+src="https://www.youtube.com/embed/kd6e_ZfTyqI"
+frameborder="0" allowfullscreen></iframe>
+<!-- Number -->
+
+
+
+<!-- ########################################## -->
+<!-- ########################################## -->
+
+    <!--     <div style="clear:both"></div>
+        <div class="demo" style="width:100%" >
+
+            <pre>            </pre>
+            <div style="width: 80%; margin-bottom: 20px; background-color:#222"> -->
+
+<!-- <input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25" data-skin="tron"> -->
+
+<!--
+<input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25"> -->
+<!-- REMOVED BUT NICE:  data-displayPrevious=true -->
+<!-- THIN BORDER INSTEAD OF BACKGROUND: data-skin="tron" -->
+
+          <!--   </div>
+        </div> -->
+
+        <!-- <div style="clear:both"></div>
+        <script>
+        function clock() {
+            var $s = $(".second"),
+                $m = $(".minute"),
+                $h = $(".hour");
+                d = new Date(),
+                s = d.getSeconds(),
+                m = d.getMinutes(),
+                h = d.getHours();
+            $s.val(s).trigger("change");
+            $m.val(m).trigger("change");
+            $h.val(h).trigger("change");
+            setTimeout("clock()", 1000);
+        }
+        clock();
+        </script>
+        <div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
+            <p>&#215; Superpose (clock)</p>
+            <div style="position:relative;width:350px;margin:auto">
+                <div style="position:absolute;left:10px;top:10px">
+                    <input class="knob hour" data-min="0" data-max="24" data-bgColor="#333" data-fgColor="#ffec03" data-displayInput=false data-width="300" data-height="300" data-thickness=".3">
+                </div>
+                <div style="position:absolute;left:60px;top:60px">
+                    <input class="knob minute" data-min="0" data-max="60" data-bgColor="#333" data-displayInput=false data-width="200" data-height="200" data-thickness=".45">
+                </div>
+                <div style="position:absolute;left:110px;top:110px">
+                    <input class="knob second" data-min="0" data-max="60" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="100" data-height="100" data-thickness=".3">
+                </div>
+            </div>
+        </div>
+ -->
+
+
+
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `module_eval'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `compile'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:244:in `block in compile!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `synchronize'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `compile!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:144:in `block in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:125:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:143:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:414:in `_run__1491344292988347981__process_action__3078857432400759004__callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:121:in `process'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal.rb:246:in `block in action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:186:in `call!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:164:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/builder.rb:59:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/query_cache.rb:64:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `_run__3238032304417337521__call__3986573226070111700__callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/engine.rb:484:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/application.rb:231:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered beats/index.html.erb within layouts/application (39.4ms)
+Completed 500 Internal Server Error in 41.2ms
+
+ActionView::Template::Error (/Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...eld_tag(:time, javascript_tag "alert('All is good')") );@out...
+...                               ^
+/Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+...t_tag "alert('All is good')") );@output_buffer.safe_concat('
+...                               ^):
+    29:       <%= text_field_tag(:location, "London") %>
+    30: 
+    31:       <%= label_tag(:time, "Time:") %>
+    32:       <%= text_field_tag(:time, javascript_tag "alert('All is good')") %>
+    33:       <%= submit_tag("Play!") %>
+    34: 
+    35:     <%end %>
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.18) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.18) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.18) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.18) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:414:in `_run__1491344292988347981__process_action__3078857432400759004__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.18) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__3238032304417337521__call__3986573226070111700__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4.5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:37:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:38:02 -0700
+Processing by BeatsController#index as HTML
+ERROR: compiling _app_views_beats_index_html_erb__1509981339532780548_70193830089500 RAISED /Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._tag(:time, javascript_tag asdf) );@output_buffer.safe_conca...
+...                               ^
+Function body:           def _app_views_beats_index_html_erb__1509981339532780548_70193830089500(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "beats/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+        <div style="width:80%;font-size:40px;letter-spacing:-8px;line-height:40px;color:#66EE66;">
+            <h1>New World Radio</h1>
+        </div>
+
+<!-- ########################################## -->
+<!-- dial -->
+<!-- ########################################## -->
+<!-- <p>&#215; Infinite || iPod click wheel</p> -->
+        <div class="demo" style="height:440px;width:300px">
+            <div style="float:left;">
+                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#87CEEA">1998</div>
+                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+            </div>
+
+
+            <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
+                <pre>
+
+                </pre>
+                <input class="infinite" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
+
+            </div>
+ </div>
+
+<div id="play">
+    ');@output_buffer.append=  form_tag("/search", method: "get", :remote => true) do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( label_tag(:location, "Location:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( text_field_tag(:location, "London") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+      ');@output_buffer.append= ( label_tag(:time, "Time:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( text_field_tag(:time, javascript_tag asdf) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( submit_tag("Play!") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');    end 
+@output_buffer.safe_concat('</div>
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+src="https://www.youtube.com/embed/kd6e_ZfTyqI"
+frameborder="0" allowfullscreen></iframe>
+<!-- Number -->
+
+
+
+<!-- ########################################## -->
+<!-- ########################################## -->
+
+    <!--     <div style="clear:both"></div>
+        <div class="demo" style="width:100%" >
+
+            <pre>            </pre>
+            <div style="width: 80%; margin-bottom: 20px; background-color:#222"> -->
+
+<!-- <input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25" data-skin="tron"> -->
+
+<!--
+<input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25"> -->
+<!-- REMOVED BUT NICE:  data-displayPrevious=true -->
+<!-- THIN BORDER INSTEAD OF BACKGROUND: data-skin="tron" -->
+
+          <!--   </div>
+        </div> -->
+
+        <!-- <div style="clear:both"></div>
+        <script>
+        function clock() {
+            var $s = $(".second"),
+                $m = $(".minute"),
+                $h = $(".hour");
+                d = new Date(),
+                s = d.getSeconds(),
+                m = d.getMinutes(),
+                h = d.getHours();
+            $s.val(s).trigger("change");
+            $m.val(m).trigger("change");
+            $h.val(h).trigger("change");
+            setTimeout("clock()", 1000);
+        }
+        clock();
+        </script>
+        <div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
+            <p>&#215; Superpose (clock)</p>
+            <div style="position:relative;width:350px;margin:auto">
+                <div style="position:absolute;left:10px;top:10px">
+                    <input class="knob hour" data-min="0" data-max="24" data-bgColor="#333" data-fgColor="#ffec03" data-displayInput=false data-width="300" data-height="300" data-thickness=".3">
+                </div>
+                <div style="position:absolute;left:60px;top:60px">
+                    <input class="knob minute" data-min="0" data-max="60" data-bgColor="#333" data-displayInput=false data-width="200" data-height="200" data-thickness=".45">
+                </div>
+                <div style="position:absolute;left:110px;top:110px">
+                    <input class="knob second" data-min="0" data-max="60" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="100" data-height="100" data-thickness=".3">
+                </div>
+            </div>
+        </div>
+ -->
+
+
+
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `module_eval'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `compile'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:244:in `block in compile!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `synchronize'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `compile!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:144:in `block in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:125:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:143:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:414:in `_run__1491344292988347981__process_action__3078857432400759004__callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:121:in `process'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal.rb:246:in `block in action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:186:in `call!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:164:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/builder.rb:59:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/query_cache.rb:64:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `_run__3238032304417337521__call__3986573226070111700__callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/engine.rb:484:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/application.rb:231:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered beats/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2.4ms
+
+ActionView::Template::Error (/Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._tag(:time, javascript_tag asdf) );@output_buffer.safe_conca...
+...                               ^):
+    29:       <%= text_field_tag(:location, "London") %>
+    30: 
+    31:       <%= label_tag(:time, "Time:") %>
+    32:       <%= text_field_tag(:time, javascript_tag asdf) %>
+    33:       <%= submit_tag("Play!") %>
+    34: 
+    35:     <%end %>
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.18) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.18) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.18) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.18) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:414:in `_run__1491344292988347981__process_action__3078857432400759004__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.18) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__3238032304417337521__call__3986573226070111700__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:42:44 -0700
+Processing by BeatsController#index as HTML
+ERROR: compiling _app_views_beats_index_html_erb__1509981339532780548_70193830089500 RAISED /Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._tag(:time, javascript_tag asdf) );@output_buffer.safe_conca...
+...                               ^
+Function body:           def _app_views_beats_index_html_erb__1509981339532780548_70193830089500(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "beats/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+        <div style="width:80%;font-size:40px;letter-spacing:-8px;line-height:40px;color:#66EE66;">
+            <h1>New World Radio</h1>
+        </div>
+
+<!-- ########################################## -->
+<!-- dial -->
+<!-- ########################################## -->
+<!-- <p>&#215; Infinite || iPod click wheel</p> -->
+        <div class="demo" style="height:440px;width:300px">
+            <div style="float:left;">
+                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#87CEEA">1998</div>
+                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+            </div>
+
+
+            <div style="float:left;width:100%;height:320px;padding:20px;background-color:#222;text-align:center;">
+                <pre>
+
+                </pre>
+                <input class="infinite" value="1998" data-width="150" data-thickness=".35" data-fgColor="#ffec03" data-bgColor="#7C6E16" data-displayInput="false" data-cursor=true>
+
+            </div>
+ </div>
+
+<div id="play">
+    ');@output_buffer.append=  form_tag("/search", method: "get", :remote => true) do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( label_tag(:location, "Location:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( text_field_tag(:location, "London") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+      ');@output_buffer.append= ( label_tag(:time, "Time:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( text_field_tag(:time, javascript_tag asdf) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( submit_tag("Play!") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');    end 
+@output_buffer.safe_concat('</div>
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+src="https://www.youtube.com/embed/kd6e_ZfTyqI"
+frameborder="0" allowfullscreen></iframe>
+<!-- Number -->
+
+
+
+<!-- ########################################## -->
+<!-- ########################################## -->
+
+    <!--     <div style="clear:both"></div>
+        <div class="demo" style="width:100%" >
+
+            <pre>            </pre>
+            <div style="width: 80%; margin-bottom: 20px; background-color:#222"> -->
+
+<!-- <input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25" data-skin="tron"> -->
+
+<!--
+<input class="knob" data-width="80%"  data-fgColor="#ffec03" data-bgColor="#7C6E16"  data-cursor=true  value="35" data-thickness=".25"> -->
+<!-- REMOVED BUT NICE:  data-displayPrevious=true -->
+<!-- THIN BORDER INSTEAD OF BACKGROUND: data-skin="tron" -->
+
+          <!--   </div>
+        </div> -->
+
+        <!-- <div style="clear:both"></div>
+        <script>
+        function clock() {
+            var $s = $(".second"),
+                $m = $(".minute"),
+                $h = $(".hour");
+                d = new Date(),
+                s = d.getSeconds(),
+                m = d.getMinutes(),
+                h = d.getHours();
+            $s.val(s).trigger("change");
+            $m.val(m).trigger("change");
+            $h.val(h).trigger("change");
+            setTimeout("clock()", 1000);
+        }
+        clock();
+        </script>
+        <div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
+            <p>&#215; Superpose (clock)</p>
+            <div style="position:relative;width:350px;margin:auto">
+                <div style="position:absolute;left:10px;top:10px">
+                    <input class="knob hour" data-min="0" data-max="24" data-bgColor="#333" data-fgColor="#ffec03" data-displayInput=false data-width="300" data-height="300" data-thickness=".3">
+                </div>
+                <div style="position:absolute;left:60px;top:60px">
+                    <input class="knob minute" data-min="0" data-max="60" data-bgColor="#333" data-displayInput=false data-width="200" data-height="200" data-thickness=".45">
+                </div>
+                <div style="position:absolute;left:110px;top:110px">
+                    <input class="knob second" data-min="0" data-max="60" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="100" data-height="100" data-thickness=".3">
+                </div>
+            </div>
+        </div>
+ -->
+
+
+
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `module_eval'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `compile'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:244:in `block in compile!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `synchronize'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `compile!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:144:in `block in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:125:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/template.rb:143:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:414:in `_run__1491344292988347981__process_action__3078857432400759004__callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:121:in `process'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_controller/metal.rb:246:in `block in action'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:186:in `call!'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:164:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/omniauth-1.2.1/lib/omniauth/builder.rb:59:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/query_cache.rb:64:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `_run__3238032304417337521__call__3986573226070111700__callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.18/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/engine.rb:484:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/application.rb:231:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered beats/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4.1ms
+
+ActionView::Template::Error (/Users/apprentice/Desktop/week3_monday/NewWorldRadio/app/views/beats/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._tag(:time, javascript_tag asdf) );@output_buffer.safe_conca...
+...                               ^):
+    29:       <%= text_field_tag(:location, "London") %>
+    30: 
+    31:       <%= label_tag(:time, "Time:") %>
+    32:       <%= text_field_tag(:time, javascript_tag asdf) %>
+    33:       <%= submit_tag("Play!") %>
+    34: 
+    35:     <%end %>
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.18) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.18) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.18) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.18) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:414:in `_run__1491344292988347981__process_action__3078857432400759004__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.18) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__3238032304417337521__call__3986573226070111700__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (38.7ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (1.0ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (4ms)  (pid 2584)
+Completed 200 OK in 63.2ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Served asset /beats.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:01 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:43:03 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1279.3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.7ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 103.6ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:39 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:43:41 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1377.3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:43:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:43:59 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1052.7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.5ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 101.0ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:45:38 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&location=London&commit=Play!" for 127.0.0.1 at 2014-07-07 11:45:40 -0700
+Processing by BeatsController#search as JS
+  Parameters: {"utf8"=>"✓", "location"=>"London", "commit"=>"Play!"}
+Completed 500 Internal Server Error in 255.7ms
+
+Echowrap::Error::BadRequest (artist_start_year_after - Invalid parameter: "" is not a valid year.):
+  app/controllers/beats_controller.rb:14:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 60.0ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Served asset /beats.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Served asset /application.js - 304 Not Modified (57ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:46:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:46:42 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 966.5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:47:17 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.2ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:47:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:47:18 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:47:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:47:18 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:47:18 -0700
+Served asset /beats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:47:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:47:20 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1982.0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:48:17 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.6ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 66.2ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:18 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:18 -0700
+Served asset /application.js - 304 Not Modified (69ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:18 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:18 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:48:19 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1386.1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 59.0ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:48:59 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:49:01 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 2184.1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:49:13 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (4ms)  (pid 2584)
+Completed 200 OK in 59.0ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:14 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:14 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:14 -0700
+Served asset /beats.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:14 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:49:15 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1109.6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 60.6ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:26 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:49:27 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1089.0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:49:30 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1297.6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:49:33 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 981.2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 59.9ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Served asset /beats.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:49:47 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:49:49 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 1085.6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.4ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (3ms)  (pid 2584)
+Completed 200 OK in 59.6ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Served asset /beats.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:50:03 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1990" for 127.0.0.1 at 2014-07-07 11:50:06 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1990"}
+Completed 200 OK in 2474.4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:51:04 -0700
+Processing by BeatsController#index as HTML
+  Rendered beats/index.html.erb within layouts/application (0.6ms)
+Compiled beats.js  (0ms)  (pid 2584)
+Compiled application.js  (4ms)  (pid 2584)
+Completed 200 OK in 70.1ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:51:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:51:05 -0700
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/beats.js?body=1" for 127.0.0.1 at 2014-07-07 11:51:05 -0700
+Served asset /beats.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:51:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 11:51:05 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 11:51:05 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=New+York&time=1998" for 127.0.0.1 at 2014-07-07 11:51:13 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"1998"}
+Completed 200 OK in 1471.5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=2008" for 127.0.0.1 at 2014-07-07 11:51:23 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2008"}
+Completed 200 OK in 1485.7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=2026" for 127.0.0.1 at 2014-07-07 11:51:30 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2026"}
+Completed 500 Internal Server Error in 269.1ms
+
+NoMethodError (undefined method `songs' for nil:NilClass):
+  app/controllers/beats_controller.rb:16:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20" for 127.0.0.1 at 2014-07-07 11:51:30 -0700
+
+ActionController::RoutingError (No route matches [GET] "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/search?location=New+York&time=2013" for 127.0.0.1 at 2014-07-07 11:51:39 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2013"}
+Completed 200 OK in 1101.2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=2015" for 127.0.0.1 at 2014-07-07 11:51:46 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2015"}
+Completed 500 Internal Server Error in 656.6ms
+
+NoMethodError (undefined method `songs' for nil:NilClass):
+  app/controllers/beats_controller.rb:16:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20" for 127.0.0.1 at 2014-07-07 11:51:47 -0700
+
+ActionController::RoutingError (No route matches [GET] "/%3C!DOCTYPE%20html%3E%3Chtml%20lang=%22en%22%3E%3Chead%3E%20%20%3Cmeta%20charset=%22utf-8%22%20/%3E%20%20%3Ctitle%3EAction%20Controller:%20Exception%20caught%3C/title%3E%20%20%3Cstyle%3E%20%20%20%20body%20%7B%20background-color:%20"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/search?location=New+York&time=2014" for 127.0.0.1 at 2014-07-07 11:51:49 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2014"}
+Completed 500 Internal Server Error in 242.9ms
+
+NoMethodError (undefined method `songs' for nil:NilClass):
+  app/controllers/beats_controller.rb:16:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/search?location=New+York&time=2014" for 127.0.0.1 at 2014-07-07 11:51:54 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2014"}
+Completed 500 Internal Server Error in 277.5ms
+
+NoMethodError (undefined method `songs' for nil:NilClass):
+  app/controllers/beats_controller.rb:16:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/search?location=New+York&time=2013" for 127.0.0.1 at 2014-07-07 11:51:58 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2013"}
+Completed 500 Internal Server Error in 445.7ms
+
+NoMethodError (undefined method `title' for nil:NilClass):
+  app/controllers/beats_controller.rb:16:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/search?location=New+York&time=2013" for 127.0.0.1 at 2014-07-07 11:52:02 -0700
+Processing by BeatsController#search as */*
+  Parameters: {"location"=>"New York", "time"=>"2013"}
+Completed 200 OK in 916.0ms (Views: 0.2ms | ActiveRecord: 0.0ms)

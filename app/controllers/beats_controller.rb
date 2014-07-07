@@ -9,7 +9,7 @@ class BeatsController < ApplicationController
 
 	def search
 		puts "In YouTube"
-		params
+		p params
 		# # p params["track"]
 		@artist = Echowrap.artist_search(:artist_start_year_after => params[:time], :artist_location => params[:location], :bucket => ["artist_location", "songs"])
 

@@ -26,9 +26,9 @@
 <div id="play">
     <%= form_tag("/search", method: "get", :remote => true) do %>
       <%= label_tag(:location, "Location:") %>
-      <%= text_field_tag(:location) %>
-      <%= label_tag(:time, "Time:") %>
-      <%= text_field_tag(:time) %>
+      <%= text_field_tag(:location, "London") %>
+
+     <!--  -->
       <%= submit_tag("Play!") %>
 
     <%end %>
