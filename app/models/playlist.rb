@@ -20,8 +20,6 @@ class Playlist
         # video_url = "https://www.youtube.com/embed/" + video_id+"?autoplay=1"
 
         # "http://www.youtube.com/v/#{video_id}autoplay=1&version=3&loop=1&playlist=LOMbySJTKpg,LOMbySJTKpg"
-
-
         playlist_ids << video_id
     end
     playlist_ids
