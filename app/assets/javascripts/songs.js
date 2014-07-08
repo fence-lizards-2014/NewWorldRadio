@@ -11,7 +11,7 @@ $(document).ready(function(){
       console.log("done")
       // debugger
       console.log(data)
-      console.log(data.playlist)
+      // console.log(data.playlist)
       var baseUrl = "http://www.youtube.com/v/"
       var midUrl = "?autoplay=1&version=3&loop=1&playlist="
       var fullUrl = baseUrl + data.playlist.shift() + midUrl + data.playlist.join(",")
