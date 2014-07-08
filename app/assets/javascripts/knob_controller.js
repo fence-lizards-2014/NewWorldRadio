@@ -1,3 +1,4 @@
+// # CR put js vendor code in vendor foler
 
 $(function($) {
 
