@@ -10,7 +10,7 @@ $(document).ready(function(){
     }).done(function(data){
       console.log("done")
       // debugger
-      console.log(data)
+      // console.log(data)
       // console.log(data.playlist)
       var baseUrl = "http://www.youtube.com/v/"
       var midUrl = "?autoplay=1&version=3&loop=1&playlist="
@@ -18,19 +18,12 @@ $(document).ready(function(){
       $('iframe').attr("src", fullUrl)
     })
     .fail(function(data){
-      console.log(data)
+      // console.log(data)
       console.log("fail")
       console.log(data.responseText)
     })
   })
 })
-
-  // function success(response){
-  //   console.log(response)
-  // }
-
-
-  // $('#play').bind('ajax:success',playmusic)
 
 function playmusic(e, data, status, xhr){
 

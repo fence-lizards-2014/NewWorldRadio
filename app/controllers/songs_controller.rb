@@ -1,13 +1,12 @@
 class SongsController < ApplicationController
 
 	def index
-	end
+  end
 
 	def search
-    song_info = {}
-		artists = Playlist.find_artists(params)
-		songs = Playlist.get_artist_songs(artists)
-		@playlist = Playlist.get_song_ids(songs)
- 	  render json: {playlist: @playlist}
-	end
+    @playlist = Playlist.new(params)
+ 	  render json: {playlist: @playlist.youtube_que}
+  end
+
 end
+
