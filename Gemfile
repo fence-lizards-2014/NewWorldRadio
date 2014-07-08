@@ -49,6 +49,7 @@ gem "rspec-rails", :group => [:development, :test]
 gem 'vcr'
 # gem 'webmock'
 gem 'capybara'
+gem 'pry'
 
 #Gems for heroku
 # gem 'rails_12facZtor', group: :production

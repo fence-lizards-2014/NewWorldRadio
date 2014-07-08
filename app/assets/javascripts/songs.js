@@ -2,7 +2,8 @@ $(document).ready(function(){
   $('#play').on("submit", playsong);
 });
 
-function playsong(){
+function playsong(event){
+  event.preventDefault();
   $.ajax({
     type: "GET",
     url: "/search",
@@ -10,6 +11,7 @@ function playsong(){
     dataType: 'json'
   }).done(function(data){
     console.log("done");
+    // debugger;
     playlist_song = data.playlist['song'];
     playlist_id = data.playlist['id'];
     duration = data.playlist['duration'] * 1000;
