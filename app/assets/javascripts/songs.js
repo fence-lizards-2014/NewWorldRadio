@@ -8,19 +8,31 @@ $(document).ready(function(){
       data: {location: $("#location").val(), time: $('.ival').html()} ,
       dataType: 'json'
     }).done(function(data){
-      console.log("done")
-      // debugger
-      console.log(data)
-      // console.log(data.playlist)
+     
+      data = data.playlist;
+      playlist = []
+      artist_info = []
+     for (var i=0; i<data.length; i++){
+       playlist.push(data[i][1])
+      }
+      for (var i=0; i<data.length; i++){
+       artist_info.push(data[i][0])
+      }
+      
       var baseUrl = "http://www.youtube.com/v/"
       var midUrl = "?autoplay=1&version=3&loop=1&playlist="
-      var fullUrl = baseUrl + data.playlist.shift() + midUrl + data.playlist.join(",")
+      var fullUrl = baseUrl + playlist.shift() + midUrl + playlist.join(",")
       $('iframe').attr("src", fullUrl)
+      $('#artist_info').css('color', 'red');
+       for (i in artist_info){
+
+         $('#artist_info ul').append("<li>"+artist_info[i]+"</li>")
+        }
     })
     .fail(function(data){
-      console.log(data)
+      
       console.log("fail")
-      console.log(data.responseText)
+    
     })
   })
 })

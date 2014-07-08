@@ -1,1 +1,5 @@
 .ui-icon-loading { display: none }
+
+#artist_info li {
+    color: red;
+}

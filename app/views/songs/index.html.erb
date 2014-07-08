@@ -5,7 +5,7 @@
 <div id="play" style="position:relative;left:45%;">
     <%= form_tag("/search", method: "get") do %>
       <%= label_tag(:location, "Location:") %>
-      <%= text_field_tag(:location) %>
+      <%= text_field_tag :location, "Miami" %>
       <%= submit_tag("Play!") %>
 
     <%end %>
@@ -28,7 +28,7 @@
 
 </div>
 
-
+<div id="artist_info" ><ul></ul></div>
 <iframe id="ytplayer" type="text/html" width="640" height="640"
 src="http://www.youtube.com/v/kd6e_ZfTyqI?&version=3&loop=1&playlist=LOMbySJTKpg,LOMbySJTKpg"
 frameborder="0" allowfullscreen></iframe>
