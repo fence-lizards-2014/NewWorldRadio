@@ -10,6 +10,7 @@ class Playlist
     artists.length
     artists.each do |artist|
       if artist.songs.length >= 1
+        p artist
         title = artist.songs.sample.title.gsub(/[^0-9a-z]/i, '+')
         titlee = artist.songs.sample.title
         artist_title = "Playing #{titlee} by #{artist.name}"
