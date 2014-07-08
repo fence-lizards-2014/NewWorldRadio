@@ -1,5 +1,7 @@
-$(document).ready(function(){
+// # CR refactor to a Song model that has api interaction
 
+$(document).ready(function(){
+// # CR use on submit instead of click
     $('#play').on("click", function(e){
     e.preventDefault();
     $.ajax({

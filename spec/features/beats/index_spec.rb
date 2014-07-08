@@ -1,4 +1,6 @@
-require 'spec_helper'
+# CR require rails_helper not spec_helper
+# require 'spec_helper'
+require 'rails_helper'
 require 'net/http'
 require 'httparty'
 require 'pry'
