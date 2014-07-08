@@ -9,8 +9,10 @@ $(document).ready(function(){
       dataType: 'json'
     }).done(function(data){
       console.log("done")
-      console.log(data.video_url)
-      $('iframe').attr("src", data.video_url)
+      // debugger
+      console.log(data)
+      console.log(data.playlist[0])
+      $('iframe').attr("src", data.playlist[0])
 
     })
     .fail(function(data){
