@@ -5,7 +5,7 @@ class SongsController < ApplicationController
 
 	def search
     @playlist = Playlist.new(params)
- 	  render json: {playlist: @playlist.youtube_que}
+ 	  render json: {playlist: @playlist.play}
   end
 
 end
