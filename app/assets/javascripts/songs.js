@@ -1,14 +1,13 @@
 $(document).ready(function(){
 
-  var params = {
-    allowScriptAccess: "always"
-};
-var atts = {
-    id: "myytplayer"
-};
+  $('#play').on("click", playsong);
 
-    $('#play').on("click", function(e){
-    e.preventDefault();
+
+  });
+
+    function playsong(){
+     $('#artist_info ul li').remove();
+        
     $.ajax({
       type: "GET",
       url: "/search",
@@ -17,6 +16,12 @@ var atts = {
     }).done(function(data){
      
       data = data.playlist;
+
+   
+      duration = data[0][2]
+      console.log(duration)
+      duration = duration * 1000;
+      console.log(duration)
       playlist = []
       artist_info = []
      for (var i=0; i<data.length; i++){
@@ -32,28 +37,31 @@ var atts = {
       $('iframe').attr("src", fullUrl)
       $('#artist_info').css('color', 'red');
 
-      var video = swfobject.embedSWF(fullUrl)
+
+      // var video = swfobject.embedSWF(fullUrl)
        for (i in artist_info){
 
          $('#artist_info ul').append("<li>"+artist_info[i]+"</li>")
         }
+
+         setTimeout(function() { playsong(); }, duration);
     })
     .fail(function(data){
       
       console.log("fail")
     
     })
-  })
-})
+ 
+}
 
-onYouTubePlayerReady = function (playerId) {
-    ytplayer = document.getElementById("myytplayer");
-    ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
-};
+// onYouTubePlayerReady = function (playerId) {
+//     ytplayer = document.getElementById("myytplayer");
+//     ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
+// };
 
-onPlayerStateChange = function (state) {
-    if (state === 0) {
-        alert("Stack Overflow rocks!");
-    }
-};
+// onPlayerStateChange = function (state) {
+//     if (state === 0) {
+//         alert("Stack Overflow rocks!");
+//     }
+// };
 

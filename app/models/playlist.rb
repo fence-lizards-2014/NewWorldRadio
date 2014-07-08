@@ -1,7 +1,7 @@
 class Playlist
 
   def self.find_artists(params)
-    artists = Echowrap.artist_search(:artist_start_year_after => (params[:time].to_i - 10).to_s, :artist_end_year_before => (params[:time].to_i + 10).to_s, :artist_location => params[:location], :results => 5, :bucket => ["artist_location", "songs"]).shuffle
+    artists = Echowrap.artist_search(:artist_start_year_after => (params[:time].to_i - 10).to_s, :artist_end_year_before => (params[:time].to_i + 10).to_s, :artist_location => params[:location], :results => 1, :bucket => ["artist_location", "songs"]).shuffle
   end
 
   def self.get_artist_songs(artists)
@@ -27,12 +27,18 @@ class Playlist
   def self.get_song_ids(songs)
     playlist_ids = []
     songs.each_with_index do |song,idx|
-      response = HTTParty.get("http://gdata.youtube.com/feeds/api/videos?alt=json&fields=entry&max-results=2&v=2&q=#{song}&safeSearch=none&time=all_time&uploader=partner")
+    response = HTTParty.get("http://gdata.youtube.com/feeds/api/videos?alt=json&fields=entry&max-results=2&v=2&q=#{song}&safeSearch=none&time=all_time&uploader=partner")
+
+
+      duration = response.parsed_response["feed"]["entry"][0]["media$group"]["media$content"][0]["duration"]
+      
+     
       feed = response.parsed_response["feed"]["entry"]
       if !feed.nil?
         video_id = feed.first["id"]['$t'].split(":").last
         playlist_ids << video_id
-        p @artist_data[idx] << video_id
+       @artist_data[idx] << video_id
+       @artist_data[idx] << duration
       end
     end
     @artist_data
