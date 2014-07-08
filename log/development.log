@@ -19666,3 +19666,506 @@ Started GET "/search?location=New+York&time=1998" for 127.0.0.1 at 2014-07-07 16
 Processing by SongsController#search as JSON
   Parameters: {"location"=>"New York", "time"=>"1998"}
 Completed 200 OK in 5948.3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Connecting to database specified by database.yml
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19.2ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /jquery.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /knob_controller.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /songs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /jquery.knob.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 16:57:12 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/search?location=&time=1996" for 127.0.0.1 at 2014-07-07 16:57:16 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1996"}
+Completed 500 Internal Server Error in 1.6ms
+
+NameError (uninitialized constant SongsController::Playlist):
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/search?location=New+York&time=1996" for 127.0.0.1 at 2014-07-07 16:57:21 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1996"}
+Completed 500 Internal Server Error in 0.7ms
+
+NameError (uninitialized constant SongsController::Playlist):
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 16:58:02 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4.0ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=&time=1997" for 127.0.0.1 at 2014-07-07 16:58:05 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1997"}
+Completed 500 Internal Server Error in 472.3ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:14:in `find_artists'
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/search?location=London&time=1997" for 127.0.0.1 at 2014-07-07 16:58:07 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"London", "time"=>"1997"}
+Completed 500 Internal Server Error in 423.2ms
+
+NameError (undefined local variable or method `songs' for Playlist:Class):
+  app/models/playlist.rb:19:in `block in get_artist_songs'
+  app/models/playlist.rb:18:in `each'
+  app/models/playlist.rb:18:in `get_artist_songs'
+  app/controllers/songs_controller.rb:13:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5.6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 16:58:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 16:58:42 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 601.0ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:14:in `find_artists'
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/search?location=London&time=1998" for 127.0.0.1 at 2014-07-07 16:58:45 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"London", "time"=>"1998"}
+Completed 500 Internal Server Error in 1203.1ms
+
+TypeError (no implicit conversion of nil into String):
+  app/models/playlist.rb:30:in `+'
+  app/models/playlist.rb:30:in `block in get_song_urls'
+  app/models/playlist.rb:27:in `each'
+  app/models/playlist.rb:27:in `get_song_urls'
+  app/controllers/songs_controller.rb:15:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6.2ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 16:59:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 16:59:24 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 283.7ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:14:in `find_artists'
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/search?location=Florida&time=1998" for 127.0.0.1 at 2014-07-07 16:59:27 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"Florida", "time"=>"1998"}
+Completed 200 OK in 5745.6ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=Florida&time=1998" for 127.0.0.1 at 2014-07-07 17:00:03 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"Florida", "time"=>"1998"}
+Completed 200 OK in 5586.0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5.2ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:01:08 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 329.7ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:14:in `find_artists'
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/search?location=London&time=1998" for 127.0.0.1 at 2014-07-07 17:01:10 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"London", "time"=>"1998"}
+Completed 200 OK in 12842.9ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=London&time=1998" for 127.0.0.1 at 2014-07-07 17:01:41 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"London", "time"=>"1998"}
+Completed 200 OK in 6748.4ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:01:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:01:55 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 205.0ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:14:in `find_artists'
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/search?location=London&time=1998" for 127.0.0.1 at 2014-07-07 17:01:57 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"London", "time"=>"1998"}
+Completed 200 OK in 4263.9ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=London&time=1998" for 127.0.0.1 at 2014-07-07 17:02:31 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"London", "time"=>"1998"}
+Completed 200 OK in 4909.9ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5.5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:03:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/search?location=&time=1997" for 127.0.0.1 at 2014-07-07 17:03:51 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1997"}
+Completed 500 Internal Server Error in 250.3ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:4:in `find_artists'
+  app/controllers/songs_controller.rb:11:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/search?location=new+York&time=1997" for 127.0.0.1 at 2014-07-07 17:03:53 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"new York", "time"=>"1997"}
+Completed 200 OK in 6059.6ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=1997" for 127.0.0.1 at 2014-07-07 17:03:59 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1997"}
+Completed 200 OK in 6333.9ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?location=New+York&time=1997" for 127.0.0.1 at 2014-07-07 17:04:17 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1997"}
+Completed 200 OK in 5498.4ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.3ms)
+Compiled songs.js  (0ms)  (pid 6178)
+Compiled application.js  (4ms)  (pid 6178)
+Completed 200 OK in 94.6ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /songs.js - 200 OK (2ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:05:57 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:06:00 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 234.1ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:4:in `find_artists'
+  app/controllers/songs_controller.rb:7:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/search?location=New+York&time=1998" for 127.0.0.1 at 2014-07-07 17:06:02 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1998"}
+Completed 200 OK in 4299.4ms (Views: 0.6ms | ActiveRecord: 0.0ms)

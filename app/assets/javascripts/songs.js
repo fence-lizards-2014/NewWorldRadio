@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
     $('#play').on("click", function(e){
