@@ -8,7 +8,7 @@ class SongsController < ApplicationController
     p artists
 		songs = Playlist.get_artist_songs(artists)
 		@playlist = Playlist.get_song_ids(songs)
-    p @playlist
+    @playlist
  		render json: {playlist: @playlist}
 	end
 end
