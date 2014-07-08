@@ -4,6 +4,7 @@ class SongsController < ApplicationController
 	end
 
 	def search
+    song_info = {}
 		artists = Playlist.find_artists(params)
 		songs = Playlist.get_artist_songs(artists)
 		@playlist = Playlist.get_song_ids(songs)

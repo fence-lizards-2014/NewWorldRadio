@@ -7,9 +7,10 @@ class Playlist
   def self.get_artist_songs(artists)
     songs = []
     artists.each do |artist|
-      songs << artist.songs.sample.title.split(" ").join("+")
+      artist_name = artist.name.split(" ").join("+")
+      songs << artist_name + "+" + artist.songs.sample.title.split(" ").join("+")
     end
-    songs
+    p songs
   end
 
   def self.get_song_ids(songs)
