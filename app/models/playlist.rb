@@ -12,15 +12,19 @@ class Playlist
     songs
   end
 
-  def self.get_song_urls(songs)
-    playlist_urls = []
+  def self.get_song_ids(songs)
+    playlist_ids = []
     songs.each do |song|
         response = HTTParty.get("http://gdata.youtube.com/feeds/api/videos?alt=json&fields=entry&max-results=2&v=2&q=#{song}&safeSearch=none&time=all_time&uploader=partner")
         video_id = response.parsed_response["feed"]["entry"].first["id"]['$t'].split(":").last
-        video_url = "https://www.youtube.com/embed/" + video_id+"?autoplay=1"
-        playlist_urls << video_url
+        # video_url = "https://www.youtube.com/embed/" + video_id+"?autoplay=1"
+
+        # "http://www.youtube.com/v/#{video_id}autoplay=1&version=3&loop=1&playlist=LOMbySJTKpg,LOMbySJTKpg"
+
+
+        playlist_ids << video_id
     end
-    playlist_urls
+    playlist_ids
   end
 
 end

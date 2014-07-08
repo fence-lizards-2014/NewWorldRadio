@@ -20955,3 +20955,556 @@ Served asset /jquery.mobile.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:28:04 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:29:50 -0700
+Connecting to database specified by database.yml
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18.4ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /jquery.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /knob_controller.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /jquery.knob.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:29:51 -0700
+Served asset /songs.js - 304 Not Modified (1ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:31:29 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 302.5ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:4:in `find_artists'
+  app/controllers/songs_controller.rb:7:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/search?location=New+York&time=1998" for 127.0.0.1 at 2014-07-07 17:31:32 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1998"}
+Completed 200 OK in 5118.9ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5.1ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:32:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:33:47 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5.5ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:33:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4.5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:35:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4.5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5.3ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:36:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4.2ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5.3ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:39:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:40:58 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4.7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:58 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:58 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:59 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:59 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:40:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5.0ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:41:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4.7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /songs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:43:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:46:54 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.4ms)
+Compiled songs.js  (0ms)  (pid 6639)
+Compiled application.js  (4ms)  (pid 6639)
+Completed 200 OK in 99.8ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /songs.js - 200 OK (1ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:46:55 -0700
+Served asset /application.js - 304 Not Modified (56ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:46:56 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 558.9ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:4:in `find_artists'
+  app/controllers/songs_controller.rb:7:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/search?location=New+York&time=1998" for 127.0.0.1 at 2014-07-07 17:46:59 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1998"}
+Completed 200 OK in 5012.4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/A3jzMyYgPQs" for 127.0.0.1 at 2014-07-07 17:47:04 -0700
+
+ActionController::RoutingError (No route matches [GET] "/A3jzMyYgPQs"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 17:50:40 -0700
+Processing by SongsController#index as HTML
+  Rendered songs/index.html.erb within layouts/application (0.7ms)
+Compiled songs.js  (0ms)  (pid 6639)
+Compiled application.js  (5ms)  (pid 6639)
+Completed 200 OK in 63.0ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:40 -0700
+Served asset /songs.js - 200 OK (4ms)
+
+
+Started GET "/assets/knob_controller.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:41 -0700
+Served asset /knob_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:41 -0700
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:41 -0700
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 17:50:41 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:50:43 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 471.7ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:4:in `find_artists'
+  app/controllers/songs_controller.rb:7:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (54.8ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.8ms)
+
+
+Started GET "/search?location=&time=1998" for 127.0.0.1 at 2014-07-07 17:50:44 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"", "time"=>"1998"}
+Completed 500 Internal Server Error in 220.7ms
+
+Echowrap::Error::BadRequest (artist_location - Missing required parameter: "artist_location"):
+  app/models/playlist.rb:4:in `find_artists'
+  app/controllers/songs_controller.rb:7:in `search'
+
+
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /Users/apprentice/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/search?location=New+York&time=1998" for 127.0.0.1 at 2014-07-07 17:50:50 -0700
+Processing by SongsController#search as JSON
+  Parameters: {"location"=>"New York", "time"=>"1998"}
+Completed 200 OK in 5572.5ms (Views: 0.6ms | ActiveRecord: 0.0ms)

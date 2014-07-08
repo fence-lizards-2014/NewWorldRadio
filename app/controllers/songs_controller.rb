@@ -6,8 +6,8 @@ class SongsController < ApplicationController
 	def search
 		artists = Playlist.find_artists(params)
 		songs = Playlist.get_artist_songs(artists)
-		@playlist = Playlist.get_song_urls(songs)
-
+		@playlist = Playlist.get_song_ids(songs)
+    p @playlist
  		render json: {playlist: @playlist}
 	end
 end
