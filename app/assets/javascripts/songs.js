@@ -20,6 +20,7 @@ function playsong(event){
     if(data.error === "error")
     {
        $('#artist_info ul').append("<li>No Data available.Please search again</li>");
+        $('iframe').attr("src",'');
     }
     else{
     playlist_song = data.playlist['song'];
