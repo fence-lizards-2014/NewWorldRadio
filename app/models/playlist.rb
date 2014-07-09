@@ -18,13 +18,17 @@ class Playlist
     if (find_artists.empty?)
       @error = "No data found"
     else
-    find_current_artist
-    find_songs
-    find_current_song
-    get_current_song_id
-    get_current_song_duration
-    ready_play
-     end
+      find_current_artist
+        if(find_songs.empty?)
+          @error = "No data found"
+        else
+          find_current_song
+          get_current_song_id
+          get_current_song_duration
+          ready_play
+        end
+    end
+
   end
 
   def find_artists
