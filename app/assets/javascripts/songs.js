@@ -4,6 +4,7 @@ $(document).ready(function(){
 });
 
 function playsong(event){
+    $('#artist_info li').remove();
 
   loc=  $('.ival')[0].innerHTML
    time =  parseInt($('.knob').val())
@@ -16,8 +17,13 @@ function playsong(event){
 
     dataType: 'json'
   }).done(function(data){
-    console.log("done");
-    // debugger;
+  
+    if(data.error === "error")
+    {
+       $('#artist_info ul').append("<li>No Data available.Please search again</li>");
+        $('iframe').attr("src",'');
+    }
+    else{
     playlist_song = data.playlist['song'];
     playlist_id = data.playlist['id'];
     duration = data.playlist['duration'] * 1000;
@@ -26,9 +32,10 @@ function playsong(event){
     var fullUrl = baseUrl + playlist_id + endUrl;
     hideLoadingThing();
     $('iframe').attr("src", fullUrl);
-    $('#artist_info li').remove();
+  
     $('#artist_info ul').append("<li>"+playlist_song+"</li>");
     setTimeout(function() { playsong(); }, duration)
+  }
   })
   .fail(function(data){
     // console.log(data)

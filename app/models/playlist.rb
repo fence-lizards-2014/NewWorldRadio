@@ -15,16 +15,24 @@ class Playlist
     @playlist = {}
     @played_artists = []
     @played_songs = []
-    find_artists
-    find_current_artist
-    find_songs
-    find_current_song
-    get_current_song_id
-    get_current_song_duration
-    ready_play
+    if (find_artists.empty?)
+      @error = "No data found"
+    else
+      find_current_artist
+        if(find_songs.empty?)
+          @error = "No data found"
+        else
+          find_current_song
+          get_current_song_id
+          get_current_song_duration
+          ready_play
+        end
+    end
+
   end
 
   def find_artists
+    puts "before"
     @artists = Echowrap.artist_search(
                 :artist_location => @location,
                 :artist_start_year_after => (@time - 10),
