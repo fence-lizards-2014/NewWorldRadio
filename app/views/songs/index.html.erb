@@ -1,5 +1,17 @@
 <div id="top" style="font-size: 1.5em; line-height: 1.75em; text-align: center;">
-  <h1 style="color: #66EE66;">New World Radio</h1>
+
+  <div id="header" style="color: #66EE66; display: inline-block; text-align: center;">
+
+    <h1 style="display: inline-block;">
+      New</h1>
+
+    <div class="ival" style="text-align:center; display: inline-block;">
+      World
+    </div>
+
+    <h1 style="display: inline-block"> Radio </h1>
+  </div>
+
   <div id="play">
     <%= form_tag("/search", method: "get") do %>
 
@@ -8,16 +20,14 @@
     <%end %>
 
     <div id="artist_info">
-     <marquee behavior="scroll" direction="right" width="100%" bgcolor="#FF0000" ;>
+     <marquee behavior="scroll" direction="left" width="100%" bgcolor="#FF0000" ;>
      <ul></ul>
      </marquee>
+
     </div>
   </div>
 </div>
 
-<div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">
-  World
-</div>
 
 
 <div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
