@@ -4,12 +4,14 @@ $(document).ready(function(){
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   $('#play').on("submit", playsong);
+  $("#click").remove();
   hideLoadingThing();
 });
 
 function playsong(event){
   $('#player').remove();
   $('#artist_info li').remove();
+
   loc = $('.ival')[0].innerHTML
   time =  parseInt($('.knob').val())
   event.preventDefault();
@@ -36,9 +38,11 @@ function playsong(event){
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
       var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
+
       $('body').append(player_div);
-      var player;
+
       onYouTubeIframeAPIReady();
+      var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
           events: {
@@ -51,8 +55,15 @@ function playsong(event){
         event.target.playVideo();
         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         // $('iframe').css("width", "0px");
+        var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
+        $('body').append(play_button);
+        $("#click").on("click", playMe);
+        $("#click").trigger('click');
+        // event.target.playVideo();
       }
-
+      function playMe(event){
+        player.playVideo();
+      }
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
@@ -75,6 +86,11 @@ function playsong(event){
     console.log(data.responseText)
   })
 }
+
+function hideLoadingThing(){
+  $('.ui-loader').css("display", 'none');
+}
+
 
 
   // $('#artist_info li').remove();
@@ -116,10 +132,6 @@ function playsong(event){
   //   console.log(data.responseText)
   // })
 // }
-
-function hideLoadingThing(){
-  $('.ui-loader').css("display", 'none');
-}
 
 
 
