@@ -1,0 +1,54 @@
+<div id="top" style="font-size:1.5em;line-height:1.75em;color:#66EE66; text-align:center">
+  <h1>New World Radio</h1>
+</div>
+
+<div id="play" style="position:relative;left:45%;">
+    <%= form_tag("/search", method: "get") do %>
+      <%= label_tag(:location, "Location:") %>
+      <%= text_field_tag(:location) %>
+      <%= submit_tag("Play!") %>
+
+    <%end %>
+</div>
+<div class="demo">
+            <p>&#215; 'cursor' mode</p>
+            <pre>
+data-width="150"
+data-cursor=true
+data-thickness=.3
+data-fgColor="#222222"
+            </pre>
+            <input class="knob" data-width="150" data-cursor=true data-fgColor="red" data-thickness=.3 value="29">
+        </div>
+
+        <div class="demo year" style="height:440px;width:300px">
+            <p>&#215; Infinite || iPod click wheel</p>
+            <div style="float:left;width:180px;height:320px;padding:20px;background-color:#EEEEEE;text-align:center;">
+
+
+                <pre>
+data-width="150"
+data-cursor=true
+data-thickness=".5"
+data-fgColor="#AAAAAA"
+data-bgColor="#FFFFFF"
+data-displayInput="false"
++ some code
+                </pre>
+                <input class="infinite country" value="0" data-width="150" data-thickness=".5" data-fgColor="#AAAAAA" data-bgColor="#FFFFFF" data-displayInput="false" data-cursor=true>
+            </div>
+            <div style="float:left;margin-top:200px;">
+                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">0</div>
+                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+            </div>
+        </div>
+
+<div id="artist_info">
+  <ul></ul>
+</div>
+
+<iframe id="ytplayer" type="text/html" width="640" height="640"
+src="http://www.youtube.com/v/kd6e_ZfTyqI?&version=3&loop=1&playlist=LOMbySJTKpg,LOMbySJTKpg"
+frameborder="0" allowfullscreen></iframe>
+
+
