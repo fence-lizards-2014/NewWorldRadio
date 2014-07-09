@@ -3,9 +3,13 @@ $(function($) {
                 $(".knob").knob({
                     change : function (value) {
                         console.log("change : " + value);
+                        $('.year')[0].innerText =  value// changes "New" to year, then continues to change value to year
+                    // $("input.infinite")[0].value
                     },
+
                     release : function (value) {
                         // console.log(this.$.attr('value'));
+                        $('.year')[0].innerText = "New"
                         console.log("release : " + value);
                     },
                     cancel : function () {
@@ -59,8 +63,8 @@ $(function($) {
                     ,decr = function() { i--; $idir.show().html("").fadeOut(); $ival.html(country_list[i]); };
                 $("input.infinite").knob(
                                     {
-                                    min : 0
-                                    , max : 20
+                                    min : 1942
+                                    , max : 2014
                                     , stopper : false
                                     , change : function () {
                                                     if(v > this.cv){
@@ -78,5 +82,14 @@ $(function($) {
                                                     }
                                                     v = this.cv;
                                                 }
+                                    , release : function (value) {
+                                        // console.log(this.$.attr('value'));
+                                        $('.ival')[0].innerText = "World"
+                                        console.log("release : " + value);
+                    },
                                     });
+
             });
+
+// make sure that our infinite knob function is affecting the YEAR knob, not just the COUNTRY knob.
+//
