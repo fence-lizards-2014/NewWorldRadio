@@ -48,8 +48,9 @@ function playsong(event){
         });
       }
       function onPlayerReady(event) {
-        event.target.playVideo();
         // $('iframe').css("width", "0px");
+        $('#artist_info ul').append("<li>"+playlist_song+"</li>");
+        event.target.playVideo();
       }
 
       // 5. The API calls this function when the player's state changes.
