@@ -1,0 +1,43 @@
+<!DOCTYPE html> <html>
+<head>
+  <meta charset="utf-8" />
+
+  <!-- make apple top section black -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Your Title</title> <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" /> <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> <script type="text/javascript"
+  src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script> <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> <body>
+
+
+
+
+<div data-role="page" id="main">
+  <div data-role="header"> <h1>New World Radio</h1>
+  </div>
+  <div data-role="content">
+
+      <!-- search -->
+      <div data-role="fieldcontainer">
+        <label for="qty">Select a Year:</label>
+        <input type="range" id="qty" name="qty" min="1942" max="2014" value="1986" data-theme="e" data-track-theme="b">
+      </div>
+
+      <!-- slider -->
+      <label for="updated">Receive updates</label>
+      <select id="updated" name="updated" data-role="slider"> <option value="no">Location</option>
+        <option value="yes">Date</option>
+      </select>
+
+      <!-- menu selector different interface-->
+      <label for="training">Select a Location</label> <select id="training" name="training"> <option value="1">USA</option>
+      <option value="2">India</option> <option value="3">Australia</option>
+      <option value="4">United Kingdom</option> <option value="5">Iran</option> <option value="6">Hong Kong</option> </select>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+
