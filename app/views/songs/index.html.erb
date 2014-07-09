@@ -3,36 +3,41 @@
 </div>
 
 <div id="play" style="position:relative;left:45%;">
-    <%= form_tag("/search", method: "get") do %>
+  <%= form_tag("/search", method: "get") do %>
 
-      <%= submit_tag("Play!") %>
+    <%= submit_tag("Play!") %>
 
-    <%end %>
+  <%end %>
 </div>
+
 <div id="artist_info">
  <marquee behavior="scroll" direction="left" width="100%" bgcolor="#FF0000" ;>
  <ul></ul>
  </marquee>
 </div>
-<div class="demo">
+ <!-- does this div close anywhere? -->
 
-            <!-- $('.knob').val() -->
-            <input class="knob" data-width="150" data-cursor=true data-fgColor="red" data-thickness=.3 value="29">
-        </div>
-
-        <div class="demo year" style="height:250px;width:300px">
-            <div style="float:left;width:180px;height:320px;padding:20px;background-color:#EEEEEE;text-align:center;">
+<div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">
+  World
+</div>
 
 
-                <!-- $('.ival')[0].innerHTML -->
-                <!-- c = $('.ival')[0].innerHTML=country_list[7] -->
-                <input class="infinite country" value="0" data-width="150" data-thickness=".5" data-fgColor="#AAAAAA" data-bgColor="#FFFFFF" data-displayInput="false" data-cursor=true>
-            </div>
-            <div style="float:left;margin-top:200px;">
-                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">World</div>
-                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
-            </div>
-        </div>
+<div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
+  <pre>
+
+  </pre>
+  <div style="position:relative;width:350px;margin:auto">
+    <div style="position:absolute;left:10px;top:10px">
+        <input class="knob" data-cursor=true data-bgColor="#333" data-fgColor="#ffec03" data-displayInput="true" data-width="300" data-height="300" data-thickness=".3" value="2000">
+    </div>
+    <div style="position:absolute;left:60px;top:60px">
+        <input class="infinite country" value="0" data-bgColor="#333" data-displayInput=false data-width="200" data-height="200" data-thickness=".45" data-cursor=true>
+    </div>
+    <div style="position:absolute;left:110px;top:110px">
+        <input class="knob second" value="162" data-min="0" data-max="200" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="100" data-height="100" data-thickness=".3">
+    </div>
+  </div>
+</div>
 
 
 <iframe id="ytplayer" type="text/html" width="100" height="100"
