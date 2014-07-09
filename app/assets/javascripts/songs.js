@@ -3,11 +3,16 @@ $(document).ready(function(){
 });
 
 function playsong(event){
+
+  loc=  $('.ival')[0].innerHTML
+   time =  parseInt($('.knob').val())
   event.preventDefault();
   $.ajax({
     type: "GET",
     url: "/search",
-    data: {location: $("#location").val(), time: $('.ival').html()} ,
+    // data: {location: $("#location").val(), time: $('.ival').html()} ,
+    data: {location: $('.ival')[0].innerHTML, time: parseInt($('.knob').val())} ,
+
     dataType: 'json'
   }).done(function(data){
     console.log("done");
