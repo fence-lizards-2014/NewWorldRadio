@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('#play').on("submit", playsong);
+  hideLoadingThing();
 });
 
 function playsong(event){
@@ -23,6 +24,7 @@ function playsong(event){
     var baseUrl = "http://www.youtube.com/v/";
     var endUrl = "?version=3&autoplay=1";
     var fullUrl = baseUrl + playlist_id + endUrl;
+    hideLoadingThing();
     $('iframe').attr("src", fullUrl);
     $('#artist_info li').remove();
     $('#artist_info ul').append("<li>"+playlist_song+"</li>");
@@ -30,9 +32,14 @@ function playsong(event){
   })
   .fail(function(data){
     // console.log(data)
+    hideLoadingThing();
     console.log("fail");
     console.log(data.responseText)
   })
+}
+
+function hideLoadingThing(){
+  $('.ui-loader').css("display", 'none');
 }
 
 

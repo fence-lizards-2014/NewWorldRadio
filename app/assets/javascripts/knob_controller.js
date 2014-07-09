@@ -2,7 +2,7 @@ $(function($) {
 
                 $(".knob").knob({
                     change : function (value) {
-                        // console.log("change : " + value);
+                        console.log("change : " + value);
                     },
                     release : function (value) {
                         // console.log(this.$.attr('value'));
