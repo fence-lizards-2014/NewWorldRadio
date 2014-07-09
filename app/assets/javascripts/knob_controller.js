@@ -2,10 +2,10 @@ $(function($) {
 
                 $(".knob").knob({
                     change : function (value) {
-                        //console.log("change : " + value);
+                        // console.log("change : " + value);
                     },
                     release : function (value) {
-                        //console.log(this.$.attr('value'));
+                        // console.log(this.$.attr('value'));
                         console.log("release : " + value);
                     },
                     cancel : function () {
@@ -52,7 +52,7 @@ $(function($) {
                 });
 
                 // Example of infinite knob, iPod click wheel
-                var v, up=0,down=0,i=10
+                var v, up=0,down=0,i=1
                     ,$idir = $("div.idir")
                     ,$ival = $("div.ival")
                     ,incr = function() { i++; $idir.show().html("").fadeOut(); $ival.html(country_list[i]); }
