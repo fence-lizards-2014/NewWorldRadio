@@ -1,20 +1,21 @@
-<div id="top" style="font-size:1.5em;line-height:1.75em;color:#66EE66; text-align:center">
-  <h1>New World Radio</h1>
+<div id="top" style="font-size: 1.5em; line-height: 1.75em; text-align: center;">
+  <h1 style="color: #66EE66;">New World Radio</h1>
+  <div id="play">
+    <%= form_tag("/search", method: "get") do %>
+
+      <%= submit_tag("Play!") %>
+
+    <%end %>
+
+    <div id="artist_info">
+     <marquee behavior="scroll" direction="left" width="100%" bgcolor="#FF0000" ;>
+     <ul></ul>
+     </marquee>
+    </div>
+  </div>
 </div>
 
-<div id="play" style="position:relative;left:45%;">
-  <%= form_tag("/search", method: "get") do %>
 
-    <%= submit_tag("Play!") %>
-
-  <%end %>
-</div>
-
-<div id="artist_info">
- <marquee behavior="scroll" direction="left" width="100%" bgcolor="#FF0000" ;>
- <ul></ul>
- </marquee>
-</div>
  <!-- does this div close anywhere? -->
 
 <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">
@@ -38,8 +39,3 @@
     </div>
   </div>
 </div>
-
-<!--
-<iframe id="ytplayer" type="text/html" width="100" height="100"
-src="http://www.youtube.com/v/kd6e_ZfTyqI?&version=3&loop=1&playlist=LOMbySJTKpg,LOMbySJTKpg"
-frameborder="0" allowfullscreen></iframe> -->
