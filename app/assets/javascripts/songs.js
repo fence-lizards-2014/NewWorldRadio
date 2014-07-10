@@ -55,19 +55,25 @@ function playsong(event){
         });
       }
       function onPlayerReady(event) {
- 
-        // event.target.playVideo();
-        $('#artist_info ul').append("<li>"+playlist_song+"</li>");
+       // debugger;
+        
+      
         // $('iframe').css("width", "0px");
         var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
         $('body').append(play_button);
+        // playMe();
+
+
+        setTimeout(function(){$("#click").on("click", playMe());}, 5000);
+
         
-        $("#click").on("click", playMe);
-        $("#click").trigger('click');
-        event.target.playVideo();
+        // $("#click").trigger('click');
+         // 
+        // event.target.playVideo();
       }
       function playMe(event){
-        debugger;
+       
+          $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         player.playVideo();
       }
       // 5. The API calls this function when the player's state changes.
