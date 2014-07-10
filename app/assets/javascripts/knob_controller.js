@@ -56,11 +56,17 @@ $(function($) {
                 });
 
                 // Example of infinite knob, iPod click wheel
-                var v, up=0,down=0,i=1
+                var v, up=0,down=0,i=0
                     ,$idir = $("div.idir")
                     ,$ival = $("div.ival")
-                    ,incr = function() { i++; $idir.show().html("").fadeOut(); $ival.html(country_list[i]); }
-                    ,decr = function() { i--; $idir.show().html("").fadeOut(); $ival.html(country_list[i]); };
+                    ,incr = function() {if (i>= country_list.length) {i = 0}
+                    else {i++; $idir.show().html("").fadeOut(); $ival.html(country_list[i]);} }
+                    ,decr = function() {
+                         if (i < 0) {i = country_list.length}
+                            else{
+                            i--; $idir.show().html("").fadeOut(); $ival.html(country_list[i]);
+                        }
+                    };
                 $("input.infinite").knob(
                                     {
                                     min : 0
