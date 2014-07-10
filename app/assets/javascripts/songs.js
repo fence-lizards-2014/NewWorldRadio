@@ -34,11 +34,11 @@ function playsong(event){
       playlist_song = data.playlist['song'];
       playlist_id = data.playlist['id'];
       duration = data.playlist['duration'] * 1000;
-      var baseUrl = "http://www.youtube.com/v/";
+      var baseUrl = "https://www.youtube.com/v/";
       var endUrl = "?version=3&autoplay=1";
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
+      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
 
       $('body').append(player_div);
 
