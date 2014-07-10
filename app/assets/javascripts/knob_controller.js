@@ -9,8 +9,16 @@ $(function($) {
                         // console.log(this.$.attr('value'));
                         // if (this.$[0].className == "knob playmusic") {console.log("success!")}
                         // debugger
-                        if (this.$[0].className == "knob playmusic") {playsong(event);}
+
+                        if (this.$[0].className == "knob") {year_triggered = true;}
+
+                        if (this.$[0].className == "knob playmusic") {
+
+                            if(($.trim( $('.ival')[0].innerHTML ) != '') && year_triggered==true)
+                                {playsong(event);}
+
                         console.log("release : " + value);
+                    }
                     },
                     cancel : function () {
                         console.log("cancel : ", this);
