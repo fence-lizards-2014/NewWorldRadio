@@ -4,7 +4,7 @@ $(document).ready(function(){
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   // $(('#play')[0]).on("submit", playsong);
-   // $("#click").remove();
+ $("#click").remove();
   hideLoadingThing();
   year_triggered = false;
 });
@@ -32,6 +32,7 @@ function playsong(event){
        $('iframe').attr("src",'');
     }
     else {
+    
       playlist_song = data.playlist['song'];
       playlist_id = data.playlist['id'];
       duration = data.playlist['duration'] * 1000;
@@ -43,22 +44,27 @@ function playsong(event){
 
       $('body').append(player_div);
 
-      onYouTubeIframeAPIReady();
+     onYouTubeIframeAPIReady();
       var player;
       function onYouTubeIframeAPIReady() {
-        debugger;
-        player = new YT.Player('player', {
+         player = new YT.Player('player', {
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
         });
+         debugger;
+         console.log(player);
+
+         onPlayerReady(palyer.a);
+        
       }
       function onPlayerReady(event) {
          debugger;
         event.target.playVideo();
         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         // $('iframe').css("width", "0px");
+
         var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
 
         $('body').append(play_button);
