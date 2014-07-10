@@ -6,6 +6,7 @@ $(document).ready(function(){
   // $(('#play')[0]).on("submit", playsong);
   $("#click").remove();
   hideLoadingThing();
+  year_triggered = false;
 });
 
 function playsong(event){
