@@ -3,6 +3,7 @@ $(function($) {
                 $(".knob").knob({
                     change : function (value) {
                         console.log("change : " + value);
+                        $('#loc')[0].innerText = $('.knob').val()
                     },
                     release : function (value) {
                         // console.log(this.$.attr('value'));
