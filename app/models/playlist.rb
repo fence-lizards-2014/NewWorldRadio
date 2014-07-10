@@ -33,11 +33,11 @@ class Playlist
 
   def find_artists
     puts "before"
-    @artists = Echowrap.artist_search(
+    p @artists = Echowrap.artist_search(
                 :artist_location => @location,
                 :artist_start_year_after => (@time - 10),
                 :artist_end_year_before => (@time + 10),
-                :results => 50, :bucket => ["songs"]).shuffle
+                :results => 50).shuffle
   end
 
   def find_current_artist
@@ -47,7 +47,7 @@ class Playlist
 
   def find_songs
     potential_songs = []
-    potential_songs << Echowrap.artist_video(:name => @current_artist.name, :results => 20).flatten.shuffle
+    p potential_songs << Echowrap.artist_video(:name => @current_artist.name, :results => 20).flatten.shuffle
     verify_songs(potential_songs)
   end
 
