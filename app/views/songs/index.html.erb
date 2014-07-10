@@ -1,5 +1,17 @@
-<div id="top" style="font-size: 1.5em; line-height: 1.75em; text-align: center;">
-  <h1 style="color: #66EE66;">New World Radio</h1>
+<div id="top" style="font-size: 1.5em;text-align: center; margin-top: -1.5em">
+
+  <div id="header" style="color: #66EE66; display: inline-block; text-align: center;">
+
+    <h1>
+      New</h1>
+
+    <div class="ival" style="margin-top:-1.75em; margin-bottom:-1.75em; text-align:center">
+      World
+    </div>
+
+    <h1> Radio </h1>
+  </div>
+
   <div id="play">
     <%= form_tag("/search", method: "get") do %>
 
@@ -8,31 +20,29 @@
     <%end %>
 
     <div id="artist_info">
-     <marquee behavior="scroll" direction="right" width="100%" bgcolor="#FF0000" ;>
+     <marquee behavior="scroll" direction="left" width="100%" bgcolor="#FF0000" ;>
      <ul></ul>
      </marquee>
+
     </div>
   </div>
 </div>
 
-<div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">
-  World
-</div>
 
 
-<div class="demo" style="color:#EEE;background:#222;height:420px;width:100%">
+<div class="demo" style="color:#EEE;background:#222;height:310px;width:100%;">
   <pre>
 
   </pre>
-  <div style="position:relative;width:350px;margin:auto">
-    <div style="position:absolute;left:10px;top:10px">
-        <input class="knob" data-cursor=true data-bgColor="#333" data-fgColor="#ffec03" data-displayInput="true" data-width="300" data-height="300" data-thickness=".3" value="2000">
+  <div style="position:relative;width:225px;margin:auto; text-align:center">
+    <div style="position:absolute;left:-15px;top: -12px;">
+        <input class="knob" data-bgColor="#333" data-fgColor="#ffec03" data-displayInput="false" data-width="251" data-height="251" data-thickness=".295" value="2003">
     </div>
-    <div style="position:absolute;left:60px;top:60px">
-        <input class="infinite country" value="0" data-bgColor="#333" data-displayInput=false data-width="200" data-height="200" data-thickness=".45" data-cursor=true>
+    <div style="position:absolute;left:28px;top:31px;">
+        <input class="infinite country" value="17" data-bgColor="#333" data-displayInput=false data-width="166" data-height="166" data-thickness=".45">
     </div>
-    <div style="position:absolute;left:110px;top:110px">
-        <input class="knob second" value="162" data-min="0" data-max="200" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="100" data-height="100" data-thickness=".3">
+    <div style="position:absolute;left:70px;top:73px;">
+        <input class="knob second" value="170" data-min="0" data-max="200" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="82" data-height="82" data-thickness=".3" >
     </div>
   </div>
 </div>

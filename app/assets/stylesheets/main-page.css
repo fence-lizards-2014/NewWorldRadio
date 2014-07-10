@@ -12,8 +12,8 @@ div#top {
   width:100%;
   text-align:center;
   font-size:2em;
-  color:#66EE66
-  display: ;
+  color:#66EE66;
+  display: inline-block;
 }
 
 span.new-world-radio{
