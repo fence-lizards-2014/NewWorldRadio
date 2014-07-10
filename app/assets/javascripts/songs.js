@@ -38,7 +38,7 @@ function playsong(event){
       var endUrl = "?version=3&autoplay=1";
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="329" height="200" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
+      var player_div = '<iframe id="player" type="text/html" width="300" height="200" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1&wmode=transparent"frameborder="0"></iframe>'
 
       $('body').append(player_div);
 
@@ -91,48 +91,3 @@ function playsong(event){
 function hideLoadingThing(){
   $('.ui-loader').css("display", 'none');
 }
-
-
-
-  // $('#artist_info li').remove();
-  // loc=  $('.ival')[0].innerHTML
-  //  time =  parseInt($('.knob').val())
-  // event.preventDefault();
-  // $.ajax({
-  //   type: "GET",
-  //   url: "/search",
-  //   // data: {location: $("#location").val(), time: $('.ival').html()} ,
-  //   data: {location: $('.ival')[0].innerHTML, time: parseInt($('.knob').val())} ,
-
-  //   dataType: 'json'
-  // }).done(function(data){
-
-  //   if(data.error === "error")
-  //   {
-  //      $('#artist_info ul').append("<li>No Data available.Please search again</li>");
-  //       $('iframe').attr("src",'');
-  //   }
-  //   else{
-  //   playlist_song = data.playlist['song'];
-  //   playlist_id = data.playlist['id'];
-  //   duration = data.playlist['duration'] * 1000;
-  //   var baseUrl = "http://www.youtube.com/v/";
-  //   var endUrl = "?version=3&autoplay=1";
-  //   var fullUrl = baseUrl + playlist_id + endUrl;
-  //   hideLoadingThing();
-  //   $('iframe').attr("src", fullUrl);
-
-  //   $('#artist_info ul').append("<li>"+playlist_song+"</li>");
-  //   setTimeout(function() { playsong(); }, duration)
-  // }
-  // })
-  // .fail(function(data){
-  //   // console.log(data)
-  //   hideLoadingThing();
-  //   console.log("fail");
-  //   console.log(data.responseText)
-  // })
-// }
-
-
-
