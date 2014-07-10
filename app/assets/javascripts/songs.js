@@ -4,13 +4,12 @@ $(document).ready(function(){
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   // $(('#play')[0]).on("submit", playsong);
- $("#click").remove();
+  $("#click").remove();
   hideLoadingThing();
   year_triggered = false;
 });
 
 function playsong(event){
-
   $('#player').remove();
   $('#artist_info li').remove();
 
@@ -32,41 +31,33 @@ function playsong(event){
        $('iframe').attr("src",'');
     }
     else {
-    
       playlist_song = data.playlist['song'];
       playlist_id = data.playlist['id'];
       duration = data.playlist['duration'] * 1000;
-      var baseUrl = "https://www.youtube.com/v/";
+      var baseUrl = "http://www.youtube.com/v/";
       var endUrl = "?version=3&autoplay=1";
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1?wmode=transparent"frameborder="0"></iframe>'
+      var player_div = '<iframe id="player" type="text/html" width="0" height="0" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
 
       $('body').append(player_div);
 
-     onYouTubeIframeAPIReady();
+      onYouTubeIframeAPIReady();
       var player;
       function onYouTubeIframeAPIReady() {
-         player = new YT.Player('player', {
+        player = new YT.Player('player', {
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
         });
-         debugger;
-         console.log(player);
-
-         onPlayerReady(palyer.a);
-        
       }
       function onPlayerReady(event) {
-         debugger;
+        debugger;
         event.target.playVideo();
         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         // $('iframe').css("width", "0px");
-
         var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
-
         $('body').append(play_button);
         $("#click").on("click", playMe);
         $("#click").trigger('click');
