@@ -38,7 +38,7 @@ function playsong(event){
       var endUrl = "?version=3&autoplay=1";
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
+      var player_div = '<iframe id="player" type="text/html" width="329" height="200" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
 
       $('body').append(player_div);
 
