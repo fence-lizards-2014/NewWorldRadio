@@ -15,7 +15,8 @@ $(function($) {
                         if (this.$[0].className == "knob playmusic") {
 
                             if(($.trim( $('.ival')[0].innerHTML ) != '') && year_triggered==true)
-                                {playsong(event);}
+                                {
+                                    playsong(event);}
 
                         console.log("release : " + value);
                     }

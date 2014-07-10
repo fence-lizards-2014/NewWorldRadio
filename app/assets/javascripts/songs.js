@@ -4,12 +4,13 @@ $(document).ready(function(){
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   // $(('#play')[0]).on("submit", playsong);
-  $("#click").remove();
+   // $("#click").remove();
   hideLoadingThing();
   year_triggered = false;
 });
 
 function playsong(event){
+
   $('#player').remove();
   $('#artist_info li').remove();
 
@@ -38,13 +39,14 @@ function playsong(event){
       var endUrl = "?version=3&autoplay=1";
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
+      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1?wmode=transparent"frameborder="0"></iframe>'
 
       $('body').append(player_div);
 
       onYouTubeIframeAPIReady();
       var player;
       function onYouTubeIframeAPIReady() {
+        debugger;
         player = new YT.Player('player', {
           events: {
             'onReady': onPlayerReady,
@@ -53,10 +55,12 @@ function playsong(event){
         });
       }
       function onPlayerReady(event) {
+         debugger;
         event.target.playVideo();
         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         // $('iframe').css("width", "0px");
         var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
+
         $('body').append(play_button);
         $("#click").on("click", playMe);
         $("#click").trigger('click');
