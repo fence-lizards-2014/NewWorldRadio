@@ -10,6 +10,7 @@ $(document).ready(function(){
 });
 
 function playsong(event){
+
   $('#player').remove();
   $('#artist_info li').remove();
 
@@ -31,6 +32,7 @@ function playsong(event){
        $('iframe').attr("src",'');
     }
     else {
+
       playlist_song = data.playlist['song'];
       playlist_id = data.playlist['id'];
       duration = data.playlist['duration'] * 1000;
@@ -53,17 +55,19 @@ function playsong(event){
         });
       }
       function onPlayerReady(event) {
-       
-        event.target.playVideo();
+ 
+        // event.target.playVideo();
         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         // $('iframe').css("width", "0px");
         var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
         $('body').append(play_button);
+        
         $("#click").on("click", playMe);
         $("#click").trigger('click');
-        // event.target.playVideo();
+        event.target.playVideo();
       }
       function playMe(event){
+        debugger;
         player.playVideo();
       }
       // 5. The API calls this function when the player's state changes.
