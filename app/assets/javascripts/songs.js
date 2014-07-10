@@ -53,7 +53,7 @@ function playsong(event){
         });
       }
       function onPlayerReady(event) {
-        debugger;
+       
         event.target.playVideo();
         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         // $('iframe').css("width", "0px");
