@@ -2,22 +2,16 @@
 
   <div id="header" style="color: #66EE66; display: inline-block; text-align: center;">
 
-    <h1>
-      New</h1>
 
+
+    <h1>New World Radio </h1>
     <div class="ival" style="margin-top:-1.75em; margin-bottom:-1.75em; text-align:center">
-      World
     </div>
-
-    <h1> Radio </h1>
   </div>
+<div id="loc"><h1></h1></div>
 
   <div id="play">
-    <%= form_tag("/search", method: "get") do %>
 
-      <%= submit_tag("Play!") %>
-
-    <%end %>
 
     <div id="artist_info">
      <marquee behavior="scroll" direction="left" width="100%" bgcolor="#FF0000" ;>
@@ -42,7 +36,8 @@
         <input class="infinite country" value="17" data-bgColor="#333" data-displayInput=false data-width="166" data-height="166" data-thickness=".45">
     </div>
     <div style="position:absolute;left:70px;top:73px;">
-        <input class="knob second" value="170" data-min="0" data-max="200" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="82" data-height="82" data-thickness=".3" >
+        <input class="knob playmusic" value="170" data-min="0" data-max="200" data-bgColor="#333" data-fgColor="rgb(127, 255, 0)" data-displayInput=false data-width="82" data-height="82" data-thickness=".3" >
     </div>
+    <!-- knob trigger "triggers" the hidden play submit button" -->
   </div>
 </div>
