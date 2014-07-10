@@ -10,9 +10,19 @@
     <%= javascript_include_tag "application" %>
 
   </head>
-  <body>
-
-    <%= yield %>
+  <body style="font-family: helvetica;background:#222;">
+    <style type="text/css">
+     /* @font-face{
+        font-family: 'Tr2n';
+        font-weight: normal;
+        font-style: normal;
+        src: url(Tr2n.ttf);
+      }
+      h1{
+        font-family: 'Tr2n';
+      }*/
+    </style>
+      <%= yield %>
 
   </body>
 </html>
