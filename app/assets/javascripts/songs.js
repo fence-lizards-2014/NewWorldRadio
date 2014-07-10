@@ -4,7 +4,7 @@ $(document).ready(function(){
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   // $(('#play')[0]).on("submit", playsong);
-  $("#click").remove();
+  // $("#click").remove();
   hideLoadingThing();
   year_triggered = false;
 });
@@ -38,7 +38,7 @@ function playsong(event){
       var endUrl = "?version=3&autoplay=1";
       var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="329" height="200" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
+      var player_div = '<iframe id="player" type="text/html" width="300" height="200" src="https://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1?wmode=transparent"frameborder="0"></iframe>'
 
       $('body').append(player_div);
 
@@ -53,16 +53,17 @@ function playsong(event){
         });
       }
       function onPlayerReady(event) {
-        event.target.playVideo();
-        $('#artist_info ul').append("<li>"+playlist_song+"</li>");
+        // event.target.playVideo();
+       
         // $('iframe').css("width", "0px");
         var play_button = '<a href="/play" id="click" style="display:none;">Click Me</a>'
         $('body').append(play_button);
-        $("#click").on("click", playMe);
-        $("#click").trigger('click');
+       setTimeout(function(){$("#click").on("click", playMe());}, 3000);
+         $("#click").trigger('click');
         // event.target.playVideo();
       }
       function playMe(event){
+         $('#artist_info ul').append("<li>"+playlist_song+"</li>");
         player.playVideo();
       }
       // 5. The API calls this function when the player's state changes.
