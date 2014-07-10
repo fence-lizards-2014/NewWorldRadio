@@ -3,7 +3,7 @@ $(document).ready(function(){
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  $('#play').on("submit", playsong);
+  // $(('#play')[0]).on("submit", playsong);
   $("#click").remove();
   hideLoadingThing();
 });
