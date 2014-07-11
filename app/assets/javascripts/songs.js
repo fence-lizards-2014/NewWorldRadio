@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 function playsong(event){
-  $('#player').remove();
+  // $('#player').remove();
   $('#artist_info li').remove();
 
   loc = $('.ival')[0].innerHTML
@@ -24,22 +24,29 @@ function playsong(event){
 
     dataType: 'json'
   }).done(function(data){
-
+    debugger
     if(data.error === "error")
     {
        $('#artist_info ul').append("<li>No Data available.Please search again</li>");
        $('iframe').attr("src",'');
     }
     else {
-      playlist_song = data.playlist['song'];
-      playlist_id = data.playlist['id'];
-      duration = data.playlist['duration'] * 1000;
+      ids = []
+      titles = []
+      for (song in data.playlist['songs']){
+        titles << data.playlist['songs'][song]['title']
+        ids << data.playlist['songs'][song]['id']
+      }
+      // playlist_song = data.playlist['songs'][0]['song'];
+      // playlist_id = data.playlist['songs'][0]['id'];
+      // duration = data.playlist['duration'] * 1000;
       var baseUrl = "http://www.youtube.com/v/";
       var endUrl = "?version=3&autoplay=1";
-      var fullUrl = baseUrl + playlist_id + endUrl;
+      // var fullUrl = baseUrl + playlist_id + endUrl;
       // $('iframe').attr("src", fullUrl)
-      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+data.playlist['id']+'?enablejsapi=1"frameborder="0"></iframe>'
-
+      var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+ids[0]+'?enablejsapi=1"frameborder="0"></iframe>'
+      // var player_div = '<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/v/'+ids[0]+'?version=3&loop=1&playlist='+ids.join(",")+'?enablejsapi=1"frameborder="0"></iframe>'
+      // $('iframe').attr("src",'http://www.youtube.com/v/'+ids[0]+'?version=3&loop=1&playlist='+ids.join(",")+'?enablejsapi=1');
       $('body').append(player_div);
 
       onYouTubeIframeAPIReady();
@@ -82,6 +89,7 @@ function playsong(event){
     }
   }).fail(function(data){
     // console.log(data)
+    debugger
     hideLoadingThing();
     console.log("fail");
     console.log(data.responseText)

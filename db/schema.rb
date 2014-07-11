@@ -11,47 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140705174341) do
+ActiveRecord::Schema.define(:version => 20140710090242) do
 
-  create_table "albums", :force => true do |t|
+  create_table "songs", :force => true do |t|
     t.string   "title"
-    t.integer  "year"
-    t.integer  "artist_id"
+    t.string   "url_id"
+    t.integer  "station_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "artists", :force => true do |t|
+  add_index "songs", ["station_id"], :name => "index_songs_on_station_id"
+
+  create_table "stations", :force => true do |t|
     t.string   "name"
-    t.integer  "location_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  create_table "locations", :force => true do |t|
-    t.string   "region"
-    t.string   "country"
-    t.string   "city"
-    t.string   "state",      :default => "none"
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
-  end
-
-  create_table "tracks", :force => true do |t|
-    t.string   "title"
-    t.integer  "artist_id"
-    t.integer  "album_id"
+    t.string   "time"
+    t.string   "location"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password"
-    t.string   "access_token"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
   end
 
 end
